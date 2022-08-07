@@ -11,7 +11,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-
+      - name: "Скачиваем селенойд"
+        run: curl -s https://aerokube.com/cm/bash  | bash
+        
+      - name: "Даем права на запуск селенойда"
+        run: chmod +x ./cm
+        
+      - name: "Запускаем selenoid"
+        run: ./cm selenoid start --vnc
+        
+      - name: "Запускаем selenoid-ui"
+        run: ./cm selenoid-ui start
       - uses: actions/cache@v1
         with:
           path: |
