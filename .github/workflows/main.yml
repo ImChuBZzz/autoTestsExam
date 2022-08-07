@@ -36,11 +36,11 @@ jobs:
         
       - name: "allure report"
         uses: simple-elf/allure-report-action@master
-        id: allure-report
+        #id: allure-report
         with:
-          allure_results: allure-results
-          gh_pages: gh-pages
-          allure_report: target/allure-report
+          allure_results: target/allure-results
+          #gh_pages: gh-pages
+          #allure_report: target/allure-report
           allure_history: allure-history
           
       - name: "push allure"
