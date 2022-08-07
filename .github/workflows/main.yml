@@ -1,49 +1,57 @@
-name: MTS Bank test
+name: allure-junit4-maven
 
-env:
-  OS: ubuntu-latest
-  
-on: push
+on:
+  push:
+    branches-ignore:
+      - '!master'
 
 jobs:
-  main_job:
+  autotests:
+    name: Run tests and generate Allure Report
     runs-on: ubuntu-latest
     steps:
-      - name: "Selenoid setup"
-        run: curl -s https://aerokube.com/cm/bash  | bash
-        
-      - name: "access rights"
-        run: chmod +x ./cm
-        
-      - name: "Selenoid start"
-        run: ./cm selenoid start --vnc
-        
-      - name: "Selenoid ui"
-        run: ./cm selenoid-ui start
-        
-      - name: "push"
-        uses: actions/checkout@v2
-        
+      - uses: actions/checkout@v2
+
+      - uses: actions/cache@v1
+        with:
+          path: |
+            ~/.m2/repository
+          key: ${{ runner.os }}-${{ github.workflow }}-${{ hashFiles('**/pom.xml') }}
+          restore-keys: |
+            ${{ runner.os }}-${{ github.workflow }}-
       - name: Set up JDK
         uses: actions/setup-java@v1
         with:
           java-version: 17
-        
-      - name: "run tests"
+
+      - name: Install dependencies
+        run: mvn dependency:go-offline compile compiler:testCompile
+
+      - name: Run Test
         if: always()
-        run: mvn clean test
+        run: mvn test
         continue-on-error: true
-        
-      - name: "allure report"
+
+      - name: Get Allure history
+        uses: actions/checkout@v2
+        if: always()
+        continue-on-error: true
+        with:
+          ref: gh-pages
+          path: gh-pages
+
+      - name: Allure Report action from marketplace
         uses: simple-elf/allure-report-action@master
+        if: always()
         #id: allure-report
         with:
           allure_results: target/allure-results
           #gh_pages: gh-pages
-          #allure_report: target/allure-report
+          #allure_report: allure-report
           allure_history: allure-history
-          
-      - name: "push allure"
+
+      - name: Deploy report to Github Pages
+        if: always()
         uses: peaceiris/actions-gh-pages@v2
         env:
           PERSONAL_TOKEN: ${{ secrets.CHUBZZZ_SECRET_EXAMS }}
