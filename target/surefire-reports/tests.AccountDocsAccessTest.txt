@@ -1,9 +1,9 @@
 -------------------------------------------------------------------------------
 Test set: tests.AccountDocsAccessTest
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 19.084 s <<< FAILURE! - in tests.AccountDocsAccessTest
-tests.AccountDocsAccessTest.tariffPDFAccessTest  Time elapsed: 7.819 s  <<< ERROR!
-java.lang.IllegalArgumentException: Invalid PDF file: D:\My_docs\Workspace\JavaJob\exams\autoTestsExam\build\downloads\fe05fd9e-f082-4374-bcc6-c069f475b746\izmeneniya-tarifov-s-01-07.pdf
+Tests run: 2, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 18.017 s <<< FAILURE! - in tests.AccountDocsAccessTest
+tests.AccountDocsAccessTest.tariffPDFAccessTest  Time elapsed: 7.109 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid PDF file: D:\My_docs\Workspace\JavaJob\exams\autoTestsExam\build\downloads\82a7e595-fdc0-4c7f-aa1d-fbf67ebbcb00\izmeneniya-tarifov-s-01-07.pdf
 	at com.codeborne.pdftest.PDF.<init>(PDF.java:68)
 	at com.codeborne.pdftest.PDF.<init>(PDF.java:39)
 	at com.codeborne.pdftest.PDF.<init>(PDF.java:73)
