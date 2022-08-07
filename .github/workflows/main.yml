@@ -31,6 +31,7 @@ jobs:
         
       - name: "run tests"
         run: mvn clean test
+        continue-on-error: true
         
       - name: "allure report"
         uses: simple-elf/allure-report-action@master
