@@ -36,7 +36,7 @@ public class OfficesAndBanksPage {
 
     @Step("кликаем на 'Список'")
     public OfficesAndBanksPage filtersClick() {
-        filtersField.shouldBe(Condition.exist, Duration.ofSeconds(30)).click();
+        filtersField.shouldBe(Condition.exist).click();
         return this;
     }
 

@@ -20,7 +20,7 @@ public abstract class BaseTest {
         Configuration.browser = "chrome";
         Configuration.browserSize = "1920x1080";
         Configuration.remote = "http://localhost:4444/wd/hub";
-        Configuration.pageLoadTimeout = 45000;
+        Configuration.pageLoadTimeout = 35000;
         Configuration.timeout = 30000;
         Configuration.baseUrl = "https://www.mtsbank.ru";
         DesiredCapabilities capabilities = new DesiredCapabilities();

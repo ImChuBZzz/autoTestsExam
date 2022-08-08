@@ -4,12 +4,8 @@ import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;
 import com.codeborne.selenide.WebDriverConditions;
-import io.qameta.allure.Feature;
 import io.qameta.allure.Step;
-import io.qameta.allure.Story;
 
-
-import java.time.Duration;
 
 import static com.codeborne.selenide.Selenide.$x;
 import static com.codeborne.selenide.Selenide.closeWindow;

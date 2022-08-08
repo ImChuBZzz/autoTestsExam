@@ -1,12 +1,12 @@
 -------------------------------------------------------------------------------
 Test set: tests.smallBusiness.AccountDocsAccessTest
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 67.215 s <<< FAILURE! - in tests.smallBusiness.AccountDocsAccessTest
-tests.smallBusiness.AccountDocsAccessTest.currencyTransferAccessTest  Time elapsed: 37.011 s  <<< FAILURE!
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 44.944 s <<< FAILURE! - in tests.smallBusiness.AccountDocsAccessTest
+tests.smallBusiness.AccountDocsAccessTest.currencyTransferAccessTest  Time elapsed: 36.675 s  <<< FAILURE!
 Element not found {By.xpath: //div[2]/a[@rel='noopener noreferrer']}
 Expected: interactable
-Screenshot: file:/D:/My_docs/Workspace/JavaJob/exams/autoTestsExam/build/reports/tests/1659990769739.0.png
-Page source: file:/D:/My_docs/Workspace/JavaJob/exams/autoTestsExam/build/reports/tests/1659990769739.0.html
+Screenshot: file:/D:/My_docs/Workspace/JavaJob/exams/autoTestsExam/build/reports/tests/1659994631331.0.png
+Page source: file:/D:/My_docs/Workspace/JavaJob/exams/autoTestsExam/build/reports/tests/1659994631331.0.html
 Timeout: 30 s.
 Caused by: NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[2]/a[@rel='noopener noreferrer']"}
 	at com.codeborne.selenide.impl.WebElementSource.createElementNotFoundError(WebElementSource.java:87)
@@ -57,9 +57,9 @@ For documentation on this error, please visit: https://selenium.dev/exceptions/#
 Build info: version: '4.3.0', revision: 'a4995e2c09*'
 System info: host: 'DESKTOP-KT0G865', ip: '172.28.160.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [7e777c6d32b6bc3380aa42fff73132d9, findElement {using=xpath, value=//div[2]/a[@rel='noopener noreferrer']}]
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 104.0.5112.79, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: /tmp/.com.google.Chrome.BsoekC}, goog:chromeOptions: {debuggerAddress: localhost:41927}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 7e777c6d32b6bc3380aa42fff73132d9
+Command: [8f935f12cceed98a40130b6b5dae4720, findElement {using=xpath, value=//div[2]/a[@rel='noopener noreferrer']}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 104.0.5112.79, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: /tmp/.com.google.Chrome.k08aXC}, goog:chromeOptions: {debuggerAddress: localhost:41309}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8f935f12cceed98a40130b6b5dae4720
 	at jdk.internal.reflect.GeneratedConstructorAccessor11.newInstance(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
@@ -80,7 +80,7 @@ Session ID: 7e777c6d32b6bc3380aa42fff73132d9
 	at com.codeborne.selenide.impl.WebElementSource.checkConditionAndReturnElement(WebElementSource.java:110)
 	... 39 more
 
-tests.smallBusiness.AccountDocsAccessTest.tariffPDFAccessTest  Time elapsed: 30.198 s  <<< FAILURE!
+tests.smallBusiness.AccountDocsAccessTest.tariffPDFAccessTest  Time elapsed: 8.261 s  <<< FAILURE!
 java.lang.AssertionError: 
 
 Expected: a PDF containing "Изменения тарифов"
