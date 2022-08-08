@@ -25,7 +25,7 @@ public class SmallBusinessPage {
     @Step("Проверяем валидность ссылки на телеграмм")
     public SmallBusinessPage checkTGUrl() {
         String tgUrl = tg.getAttribute("href");
-        Selenide.sleep(10000);
+
         tg.shouldBe(Condition.visible, Duration.ofSeconds(30))
                 .scrollTo().click();
         Selenide.switchTo().window(1);
@@ -37,7 +37,7 @@ public class SmallBusinessPage {
     @Step("Проверяем валидность ссылки на вконтакте")
     public SmallBusinessPage checkVKUrl() {
         String vkUrl = vk.getAttribute("href");
-        Selenide.sleep(10000);
+
         vk.shouldBe(Condition.visible, Duration.ofSeconds(30))
                 .scrollTo().click();
         Selenide.switchTo().window(1);
@@ -49,7 +49,7 @@ public class SmallBusinessPage {
     @Step("Проверяем валидность ссылки на одноклассники")
     public SmallBusinessPage checkOKUrl() {
         String okUrl = ok.getAttribute("href");
-        Selenide.sleep(10000);
+
         ok.shouldBe(Condition.visible, Duration.ofSeconds(30))
                 .scrollTo().click();
         Selenide.switchTo().window(1);
