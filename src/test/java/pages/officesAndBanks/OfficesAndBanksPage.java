@@ -20,11 +20,18 @@ public class OfficesAndBanksPage {
     private final SelenideElement officeInput       = $x("//div[text()='Офисы МТС Банка']");
     private final SelenideElement shopsInput        = $x("//div[text()='Салон МТС']");
     private final SelenideElement terminalsInput    = $x("//div[text()='Терминалы']");
+    private final SelenideElement spinner           = $x("//div[@data-testid='heading']");
     private final ElementsCollection atmList        = $$x("//div[@class='styled__MainDataContainer-sc-egp5sf-0 evbWzI']");
 
     @Step("Переключаемся на фильтр 'Список'")
     public OfficesAndBanksPage clickOnListButton() {
         listButton.shouldBe(Condition.visible, Duration.ofSeconds(30)).click();
+        return this;
+    }
+
+    @Step("Ждём-с прогрузку....")
+    public OfficesAndBanksPage waintingForLoading() {
+        spinner.shouldNotBe(Condition.exist);
         return this;
     }
 
