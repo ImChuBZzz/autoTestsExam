@@ -1,4 +1,4 @@
-package tests;
+package tests.smallBusiness;
 
 
 import io.qameta.allure.Feature;
@@ -7,6 +7,7 @@ import io.qameta.allure.Story;
 import org.junit.Test;
 import pages.smallBuiness.SmallBusinessPage;
 import pages.StartPage;
+import tests.BaseTest;
 
 @Owner("автор - Александр Черняев")
 public class SmallBusinessSocialsTest extends BaseTest {

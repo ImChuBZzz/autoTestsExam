@@ -1,4 +1,4 @@
-package tests;
+package tests.mortgage;
 
 import io.qameta.allure.Feature;
 import io.qameta.allure.Owner;
@@ -6,9 +6,10 @@ import io.qameta.allure.Story;
 import org.junit.Test;
 import pages.StartPage;
 import pages.mortgage.MortgageItPage;
+import tests.BaseTest;
 
 @Owner("автор - Александр Черняев")
-public class MortgagePaymentsGraphTest extends BaseTest{
+public class MortgagePaymentsGraphTest extends BaseTest {
     @Feature(value = "Ипотека")
     @Story(value = "Проверка срока ипотеки и кол-во вкладок по годам в таблице платежей")
     @Test

@@ -1,4 +1,4 @@
-package tests;
+package tests.deposit;
 
 import io.qameta.allure.Feature;
 import io.qameta.allure.Owner;
@@ -6,9 +6,10 @@ import io.qameta.allure.Story;
 import org.junit.Test;
 import pages.StartPage;
 import pages.deposit.DepositPage;
+import tests.BaseTest;
 
 @Owner("автор - Александр Черняев")
-public class DepositPositiveValuesTest extends BaseTest{
+public class DepositPositiveValuesTest extends BaseTest {
 
     private final Integer depositeValue = 100_000_00;
     private final Integer termValue     = 120;
