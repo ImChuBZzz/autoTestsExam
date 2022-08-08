@@ -7,13 +7,15 @@ import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
 
 
+import java.time.Duration;
 
 import static com.codeborne.selenide.Selenide.$$x;
 import static com.codeborne.selenide.Selenide.$x;
 
 public class OfficesAndBanksPage {
 
-    private final SelenideElement listButton        = $x("//div[@data-testid='tabsbar']//button/div[text()='Списком']");
+    //private final SelenideElement listButton        = $x("//div[@data-testid='tabsbar']//button/div[text()='Списком']");
+    private final SelenideElement listButton        = $x("//div[contains(@class, 'TabsBarInner')]/button[2]");
     private final SelenideElement filtersField      = $x("//div[@class='styled__Container-sc-szata3-0 jhjBtN']");
     private final SelenideElement officeInput       = $x("//div[text()='Офисы МТС Банка']");
     private final SelenideElement shopsInput        = $x("//div[text()='Салон МТС']");
@@ -22,13 +24,13 @@ public class OfficesAndBanksPage {
 
     @Step("Переключаемся на фильтр 'Список'")
     public OfficesAndBanksPage clickOnListButton() {
-        listButton.shouldBe(Condition.visible).click();
+        listButton.shouldBe(Condition.visible, Duration.ofSeconds(30)).click();
         return this;
     }
 
     @Step("кликаем на 'Список'")
     public OfficesAndBanksPage filtersClick() {
-        filtersField.click();
+        filtersField.shouldBe(Condition.visible, Duration.ofSeconds(30)).click();
         return this;
     }
 

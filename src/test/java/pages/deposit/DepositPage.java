@@ -36,7 +36,6 @@ public class DepositPage {
         else if (value > maxValue) {
             Assert.assertEquals(Integer.parseInt(depositInput.getValue()), maxValue);
         }
-        Selenide.sleep(5000);
         return this;
     }
 
@@ -50,7 +49,6 @@ public class DepositPage {
         if (value > maxValue) {
             Assert.assertEquals(Integer.parseInt(termInput.getValue().replaceAll("\\D", "")), maxValue);
         }
-        Selenide.sleep(5000);
         return this;
     }
 

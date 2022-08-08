@@ -14,7 +14,7 @@ public class orderVirtualCardTest extends BaseTest{
     @Story(value = "Виртуальная карта")
     @Test
     public void isSmsCodeReadyToInput() {
-        String phoneExample = "1111111111";
+        String phoneExample = "9169169169";
         CardOrder cardOrder = new StartPage()
                 .openHomePage()
                 .gotoCards()

@@ -25,7 +25,8 @@ public class SmallBusinessPage {
     @Step("Проверяем валидность ссылки на телеграмм")
     public SmallBusinessPage checkTGUrl() {
         String tgUrl = tg.getAttribute("href");
-        tg.shouldBe(Condition.visible).click();
+        tg.shouldBe(Condition.exist, Duration.ofSeconds(30))
+                .scrollTo().click();
         Selenide.switchTo().window(1);
         Selenide.webdriver().shouldHave(WebDriverConditions.url(tgUrl), Duration.ofSeconds(5));
         return this;
@@ -35,7 +36,8 @@ public class SmallBusinessPage {
     @Step("Проверяем валидность ссылки на вконтакте")
     public SmallBusinessPage checkVKUrl() {
         String vkUrl = vk.getAttribute("href");
-        vk.shouldBe(Condition.visible).click();
+        vk.shouldBe(Condition.exist, Duration.ofSeconds(30))
+                .scrollTo().click();
         Selenide.switchTo().window(1);
         Selenide.webdriver().shouldHave(WebDriverConditions.url(vkUrl), Duration.ofSeconds(5));
         return this;
@@ -45,7 +47,8 @@ public class SmallBusinessPage {
     @Step("Проверяем валидность ссылки на одноклассники")
     public SmallBusinessPage checkOKUrl() {
         String okUrl = ok.getAttribute("href");
-        ok.shouldBe(Condition.visible).click();
+        ok.shouldBe(Condition.exist, Duration.ofSeconds(30))
+                .scrollTo().click();
         Selenide.switchTo().window(1);
         Selenide.webdriver().shouldHave(WebDriverConditions.url(okUrl), Duration.ofSeconds(5));
         return this;
