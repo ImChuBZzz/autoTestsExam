@@ -12,48 +12,55 @@ import io.qameta.allure.Story;
 import java.time.Duration;
 
 import static com.codeborne.selenide.Selenide.$x;
+import static com.codeborne.selenide.Selenide.closeWindow;
 
 
 public class SmallBusinessPage {
-    private final SelenideElement tg        = $x("//a[@aria-label='Telegram']");
-    private final SelenideElement vk        = $x("//a[@aria-label='Vk']");
-    private final SelenideElement ok        = $x("//a[@aria-label='Ok']");
-    private final SelenideElement account   = $x("//div[contains(@class, 'MenuHolder')]/child::a[1]");
+    private final SelenideElement tg = $x("//a[@aria-label='Telegram']");
+    private final SelenideElement vk = $x("//a[@aria-label='Vk']");
+    private final SelenideElement ok = $x("//a[@aria-label='Ok']");
+    private final SelenideElement account = $x("//div[contains(@class, 'MenuHolder')]/child::a[1]");
 
-
-
+    @Step("Выбираем телеграмм")
+    public SmallBusinessPage tgUrl() {
+        tg.shouldBe(Condition.visible)
+                .scrollTo().click();
+        return this;
+    }
     @Step("Проверяем валидность ссылки на телеграмм")
-    public SmallBusinessPage checkTGUrl() {
-        String tgUrl = tg.getAttribute("href");
-
-        tg.shouldBe(Condition.visible, Duration.ofSeconds(30))
-                .scrollTo().click();
+    public SmallBusinessPage checkTgUrl(String url) {
         Selenide.switchTo().window(1);
-        Selenide.webdriver().shouldHave(WebDriverConditions.url(tgUrl), Duration.ofSeconds(5));
+        Selenide.webdriver().shouldHave(WebDriverConditions.url(url));
+        closeWindow();
         return this;
     }
 
 
+    @Step("Выбираем вКонтакте")
+    public SmallBusinessPage vkUrl() {
+        vk.shouldBe(Condition.visible)
+                .scrollTo().click();
+        return this;
+    }
     @Step("Проверяем валидность ссылки на вконтакте")
-    public SmallBusinessPage checkVKUrl() {
-        String vkUrl = vk.getAttribute("href");
-
-        vk.shouldBe(Condition.visible, Duration.ofSeconds(30))
-                .scrollTo().click();
+    public SmallBusinessPage checkVkUrl(String url) {
         Selenide.switchTo().window(1);
-        Selenide.webdriver().shouldHave(WebDriverConditions.url(vkUrl), Duration.ofSeconds(5));
+        Selenide.webdriver().shouldHave(WebDriverConditions.url(url));
+        closeWindow();
         return this;
     }
 
-
-    @Step("Проверяем валидность ссылки на одноклассники")
-    public SmallBusinessPage checkOKUrl() {
-        String okUrl = ok.getAttribute("href");
-
-        ok.shouldBe(Condition.visible, Duration.ofSeconds(30))
+    @Step("Выбираем одноклассники")
+    public SmallBusinessPage okUrl() {
+        ok.shouldBe(Condition.visible)
                 .scrollTo().click();
+        return this;
+    }
+    @Step("Проверяем валидность ссылки на одноклассники")
+    public SmallBusinessPage checkOkUrl(String url) {
         Selenide.switchTo().window(1);
-        Selenide.webdriver().shouldHave(WebDriverConditions.url(okUrl), Duration.ofSeconds(5));
+        Selenide.webdriver().shouldHave(WebDriverConditions.url(url));
+        closeWindow();
         return this;
     }
 

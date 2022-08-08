@@ -4,6 +4,7 @@ package tests.officesAndBanks;
 import io.qameta.allure.Feature;
 import io.qameta.allure.Owner;
 import io.qameta.allure.Story;
+import io.qameta.allure.junit4.DisplayName;
 import org.junit.Test;
 import pages.officesAndBanks.OfficesAndBanksPage;
 import pages.StartPage;
@@ -13,8 +14,8 @@ import tests.BaseTest;
 public class ATMCheckoutTest extends BaseTest {
 
     @Feature(value = "Офисы и банкоматы")
-    @Story(value = "Проверяем наличие доступных банкоматов")
     @Test
+    @DisplayName("Проверяем наличие доступных банкоматов")
     public void atbNotEmptyCheck() {
         OfficesAndBanksPage officesAndBanksPage = new StartPage()
                 .openHomePage()
@@ -22,7 +23,9 @@ public class ATMCheckoutTest extends BaseTest {
                 .loading()
                 .clickOnListButton()
                 .filtersClick()
-                .setOnlyATM()
+                .offices()
+                .shops()
+                .terminals()
                 .filtersClick();
         officesAndBanksPage.ATMListSize();
     }

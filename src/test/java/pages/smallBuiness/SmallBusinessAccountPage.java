@@ -5,7 +5,6 @@ import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
 
 
-
 import java.io.IOException;
 
 
@@ -13,8 +12,8 @@ import static com.codeborne.pdftest.assertj.Assertions.assertThat;
 import static com.codeborne.selenide.Selenide.$x;
 
 public class SmallBusinessAccountPage {
-    private final SelenideElement tariffPdfLink             = $x("//div[1]/a[@rel='noopener noreferrer']");
-    private final SelenideElement currencyTransferPdfLink   = $x("//div[2]/a[@rel='noopener noreferrer']");
+    private final SelenideElement tariffPdfLink = $x("//div[1]/a[@rel='noopener noreferrer']");
+    private final SelenideElement currencyTransferPdfLink = $x("//div[2]/a[@rel='noopener noreferrer']");
 
 
     @Step("Проверяем что это файл pdf про тарифы")

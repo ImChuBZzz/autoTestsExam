@@ -25,28 +25,20 @@ jobs:
       - name: "Запускаем selenoid-ui"
         run: ./cm selenoid-ui start
 
-#      - uses: actions/cache@v1
-#        with:
-#          path: |
-#            ~/.m2/repository
-#          key: ${{ runner.os }}-${{ github.workflow }}-${{ hashFiles('**/pom.xml') }}
-#          restore-keys: |
-#            ${{ runner.os }}-${{ github.workflow }}-
-
-      - name: Set up JDK
+      - name: "устанавливаем Java 17"
         uses: actions/setup-java@v1
         with:
           java-version: 17
 
-#      - name: Install dependencies
-#        run: mvn dependency:go-offline compile compiler:testCompile
+      - name: "Хз"
+        run: mvn dependency:go-offline compile compiler:testCompile
 
       - name: "Тестируем"
         if: always()
         run: mvn clean test
         continue-on-error: true
 
-      - name: Get Allure history
+      - name: "Получаем историю отчетов"
         uses: actions/checkout@v2
         if: always()
         continue-on-error: true
@@ -54,7 +46,7 @@ jobs:
           ref: gh-pages
           path: gh-pages
 
-      - name: Allure Report action from marketplace
+      - name: "Формируем отчет"
         uses: simple-elf/allure-report-action@master
         if: always()
         with:

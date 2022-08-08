@@ -16,27 +16,35 @@ public class SmallBusinessSocialsTest extends BaseTest {
     @Story(value = "Проверка соцсетей")
     @Test
     public void tgUrlTest() {
+        String tgUrl = "https://t.me/mts_tb";
         SmallBusinessPage smallBusinessPage = new StartPage()
                 .openHomePage()
                 .gotoSmallBuisness()
-                .checkTGUrl();
+                .tgUrl()
+                .checkTgUrl(tgUrl);
     }
+
     @Feature(value = "Малый бизнес и ИП")
     @Story(value = "Проверка соцсетей")
     @Test
     public void vkUrlTest() {
+        String vkUrl = "https://vk.com/mts_tb";
         SmallBusinessPage smallBusinessPage = new StartPage()
                 .openHomePage()
                 .gotoSmallBuisness()
-                .checkVKUrl();
+                .vkUrl()
+                .checkVkUrl(vkUrl);
     }
+
     @Feature(value = "Малый бизнес и ИП")
     @Story(value = "Проверка соцсетей")
     @Test
     public void okUrlTest() {
+        String okUrl = "https://ok.ru/mts.business";
         SmallBusinessPage smallBusinessPage = new StartPage()
                 .openHomePage()
                 .gotoSmallBuisness()
-                .checkOKUrl();
+                .okUrl()
+                .checkOkUrl(okUrl);
     }
 }

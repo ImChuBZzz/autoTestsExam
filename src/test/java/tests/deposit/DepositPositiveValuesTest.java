@@ -3,6 +3,7 @@ package tests.deposit;
 import io.qameta.allure.Feature;
 import io.qameta.allure.Owner;
 import io.qameta.allure.Story;
+import io.qameta.allure.junit4.DisplayName;
 import org.junit.Test;
 import pages.StartPage;
 import pages.deposit.DepositPage;
@@ -11,22 +12,22 @@ import tests.BaseTest;
 @Owner("автор - Александр Черняев")
 public class DepositPositiveValuesTest extends BaseTest {
 
-    private final Integer depositeValue = 100_000_00;
-    private final Integer termValue     = 120;
-
     @Feature(value = "Вклады")
-    @Story(value = "Проверка допустимых значений суммы вклада")
     @Test
+    @DisplayName("Проверка допустимых значений суммы вклада")
     public void checkDepositValue() {
+        Integer depositValue = 100_000_0;
         DepositPage depositPage = new StartPage()
                 .openHomePage()
                 .gotoDeposits()
-                .checkDepositValue(depositeValue);
+                .checkDepositValue(depositValue);
     }
+
     @Feature(value = "Вклады")
-    @Story(value = "Проверка допустимых значений сроков вклада")
     @Test
+    @DisplayName("Проверка допустимых значений сроков вклада")
     public void checkTermValue() {
+        Integer termValue = 12;
         DepositPage depositPage = new StartPage()
                 .openHomePage()
                 .gotoDeposits()
