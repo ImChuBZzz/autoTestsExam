@@ -14,8 +14,7 @@ import static com.codeborne.selenide.Selenide.$x;
 
 public class OfficesAndBanksPage {
 
-    //private final SelenideElement listButton        = $x("//div[@data-testid='tabsbar']//button/div[text()='Списком']");
-    private final SelenideElement listButton        = $x("//div[contains(@class, 'TabsBarInner')]/button[2]");
+    private final SelenideElement listButton        = $x("//div[@data-testid='tabsbar']//button[2]");
     private final SelenideElement filtersField      = $x("//div[@class='styled__Container-sc-szata3-0 jhjBtN']");
     private final SelenideElement officeInput       = $x("//div[text()='Офисы МТС Банка']");
     private final SelenideElement shopsInput        = $x("//div[text()='Салон МТС']");
@@ -25,19 +24,19 @@ public class OfficesAndBanksPage {
 
     @Step("Переключаемся на фильтр 'Список'")
     public OfficesAndBanksPage clickOnListButton() {
-        listButton.shouldBe(Condition.visible, Duration.ofSeconds(30)).click();
+        listButton.shouldBe(Condition.exist, Duration.ofSeconds(30)).click();
         return this;
     }
 
     @Step("Ждём-с прогрузку....")
-    public OfficesAndBanksPage waintingForLoading() {
+    public OfficesAndBanksPage loading() {
         spinner.shouldNotBe(Condition.exist);
         return this;
     }
 
     @Step("кликаем на 'Список'")
     public OfficesAndBanksPage filtersClick() {
-        filtersField.shouldBe(Condition.visible, Duration.ofSeconds(30)).click();
+        filtersField.shouldBe(Condition.exist, Duration.ofSeconds(30)).click();
         return this;
     }
 

@@ -19,7 +19,7 @@ public class ATMCheckoutTest extends BaseTest {
         OfficesAndBanksPage officesAndBanksPage = new StartPage()
                 .openHomePage()
                 .gotoOfficesAndBanks()
-                .waintingForLoading()
+                .loading()
                 .clickOnListButton()
                 .filtersClick()
                 .setOnlyATM()
