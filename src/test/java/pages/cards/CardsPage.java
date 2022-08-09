@@ -11,13 +11,15 @@ import static com.codeborne.selenide.Selenide.$$x;
 import static com.codeborne.selenide.Selenide.$x;
 
 public class CardsPage {
-    private final SelenideElement virtualCardTab = $x("//div[@data-testid='tabsbar']//a[contains(@href, 'virtual')]");
-    private final ElementsCollection virtualCards = $$x("//h2");
+    //private final SelenideElement virtualCardTab = $x("//div[@data-testid='tabsbar']//a[contains(@href, 'virtual')]");
+    private final SelenideElement virtualCardTab = $x("//ul//a[contains(@href, 'virtual')]");
+    private final ElementsCollection virtualCards = $$x("//div[@data-testid='flexbox']/a[@data-testid='button'][1]");
 
 
     @Step("Выбираем виртуальную карту в меню")
     public CardsPage selectVirtualCards() {
-        virtualCardTab.shouldBe(Condition.visible).click();
+        virtualCardTab.scrollIntoView(true)
+                .click();
         return this;
     }
 

@@ -12,15 +12,15 @@ import static com.codeborne.pdftest.assertj.Assertions.assertThat;
 import static com.codeborne.selenide.Selenide.$x;
 
 public class SmallBusinessAccountPage {
-    private final SelenideElement tariffPdfLink = $x("//div[1]/a[@rel='noopener noreferrer']");
-    private final SelenideElement currencyTransferPdfLink = $x("//div[2]/a[@rel='noopener noreferrer']");
+    private final SelenideElement tariffPdfLink = $x("//div[2]/a[@rel='noopener noreferrer']");
+    private final SelenideElement currencyTransferPdfLink = $x("//div[1]/a[@rel='noopener noreferrer']");
 
 
     @Step("Проверяем что это файл pdf про тарифы")
     public SmallBusinessAccountPage checkTariffPDFLink() {
         PDF tariffPdf = null;
         try {
-            tariffPdf = new PDF(tariffPdfLink.download());
+            tariffPdf = new PDF(tariffPdfLink.scrollIntoView(true).download());
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -32,7 +32,7 @@ public class SmallBusinessAccountPage {
     public SmallBusinessAccountPage currencyTransferPDFLink() {
         PDF currencyPdf = null;
         try {
-            currencyPdf = new PDF(currencyTransferPdfLink.download());
+            currencyPdf = new PDF(currencyTransferPdfLink.scrollIntoView(true).download());
         } catch (IOException e) {
             e.printStackTrace();
         }

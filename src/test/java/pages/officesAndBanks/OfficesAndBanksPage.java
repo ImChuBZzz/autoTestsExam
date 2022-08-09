@@ -20,7 +20,7 @@ public class OfficesAndBanksPage {
     private final SelenideElement shopsInput = $x("//div[text()='Салон МТС']");
     private final SelenideElement terminalsInput = $x("//div[text()='Терминалы']");
     private final SelenideElement spinner = $x("//div[@data-testid='heading']");
-    private final ElementsCollection atmList = $$x("//div[@class='styled__MainDataContainer-sc-egp5sf-0 evbWzI']");
+    private final ElementsCollection atmList = $$x("//div[contains(@class, 'MainDataContainer')]");
 
     @Step("Переключаемся на фильтр 'Список'")
     public OfficesAndBanksPage clickOnListButton() {
