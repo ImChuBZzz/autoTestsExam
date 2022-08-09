@@ -6,7 +6,7 @@ import io.qameta.allure.Story;
 import io.qameta.allure.junit4.DisplayName;
 import org.junit.Test;
 import pages.smallBuiness.SmallBusinessAccountPage;
-import pages.StartPage;
+import pages.HomePage;
 import tests.BaseTest;
 
 @Owner("автор - Александр Черняев")
@@ -17,7 +17,7 @@ public class AccountDocsAccessTest extends BaseTest {
     @Test
     @DisplayName("Документы об изменении тарифов")
     public void tariffPDFAccessTest() {
-        SmallBusinessAccountPage accountPage = new StartPage()
+        SmallBusinessAccountPage accountPage = new HomePage()
                 .openHomePage()
                 .gotoSmallBuisness()
                 .gotoAccount()
@@ -28,7 +28,7 @@ public class AccountDocsAccessTest extends BaseTest {
     @Test
     @DisplayName("Документы о поручениях на перевод")
     public void currencyTransferAccessTest() {
-        SmallBusinessAccountPage accountPage = new StartPage()
+        SmallBusinessAccountPage accountPage = new HomePage()
                 .openHomePage()
                 .gotoSmallBuisness()
                 .gotoAccount()

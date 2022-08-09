@@ -7,7 +7,7 @@ import io.qameta.allure.Story;
 import io.qameta.allure.junit4.DisplayName;
 import org.junit.Test;
 import pages.smallBuiness.SmallBusinessPage;
-import pages.StartPage;
+import pages.HomePage;
 import tests.BaseTest;
 
 @Owner("автор - Александр Черняев")
@@ -19,7 +19,7 @@ public class SmallBusinessSocialsTest extends BaseTest {
     @DisplayName("Телеграмм")
     public void tgUrlTest() {
         String tgUrl = "https://t.me/mts_tb";
-        SmallBusinessPage smallBusinessPage = new StartPage()
+        SmallBusinessPage smallBusinessPage = new HomePage()
                 .openHomePage()
                 .gotoSmallBuisness()
                 .tgUrl()
@@ -32,7 +32,7 @@ public class SmallBusinessSocialsTest extends BaseTest {
     @DisplayName("вКонтакте")
     public void vkUrlTest() {
         String vkUrl = "https://vk.com/mts_tb";
-        SmallBusinessPage smallBusinessPage = new StartPage()
+        SmallBusinessPage smallBusinessPage = new HomePage()
                 .openHomePage()
                 .gotoSmallBuisness()
                 .vkUrl()
@@ -45,7 +45,7 @@ public class SmallBusinessSocialsTest extends BaseTest {
     @DisplayName("Одноклассники")
     public void okUrlTest() {
         String okUrl = "https://ok.ru/mts.business";
-        SmallBusinessPage smallBusinessPage = new StartPage()
+        SmallBusinessPage smallBusinessPage = new HomePage()
                 .openHomePage()
                 .gotoSmallBuisness()
                 .okUrl()

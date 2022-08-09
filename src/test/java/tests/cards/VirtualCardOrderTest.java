@@ -1,11 +1,12 @@
 package tests.cards;
 
+
 import io.qameta.allure.Feature;
 import io.qameta.allure.Owner;
 import io.qameta.allure.Story;
 import io.qameta.allure.junit4.DisplayName;
 import org.junit.Test;
-import pages.StartPage;
+import pages.HomePage;
 import pages.cards.CardOrder;
 import tests.BaseTest;
 
@@ -18,7 +19,7 @@ public class VirtualCardOrderTest extends BaseTest {
     @DisplayName("Подтверждение смс кода")
     public void isSmsCodeReadyToInput() {
         String phoneExample = "9169169169";
-        CardOrder cardOrder = new StartPage()
+        CardOrder cardOrder = new HomePage()
                 .openHomePage()
                 .gotoCards()
                 .selectVirtualCards()
@@ -32,15 +33,32 @@ public class VirtualCardOrderTest extends BaseTest {
     @Feature(value = "Карты")
     @Story(value = "Виртуальная карта")
     @Test
-    @DisplayName("Ошибка ввода номера телефона")
+    @DisplayName("Не вводим номер и просто жмем 'оформить карту'")
     public void emptyPhoneRequest() {
         String error = "Введите верный номер телефона";
-        CardOrder cardOrder = new StartPage()
+        CardOrder cardOrder = new HomePage()
                 .openHomePage()
                 .gotoCards()
                 .selectVirtualCards()
                 .selectFirstCard()
                 .inputEmptyPhone()
+                .sendCode()
+                .warning(error);
+    }
+
+    @Feature(value = "Карты")
+    @Story(value = "Виртуальная карта")
+    @Test
+    @DisplayName("Вводим не полный номер телефона")
+    public void incorrectPhoneRequest() {
+        String error = "Введите верный номер телефона";
+        String phoneExample = "916916916";
+        CardOrder cardOrder = new HomePage()
+                .openHomePage()
+                .gotoCards()
+                .selectVirtualCards()
+                .selectFirstCard()
+                .inputIncorrectPhone(phoneExample)
                 .sendCode()
                 .warning(error);
     }

@@ -2,10 +2,9 @@ package tests.deposit;
 
 import io.qameta.allure.Feature;
 import io.qameta.allure.Owner;
-import io.qameta.allure.Story;
 import io.qameta.allure.junit4.DisplayName;
 import org.junit.Test;
-import pages.StartPage;
+import pages.HomePage;
 import pages.deposit.DepositPage;
 import tests.BaseTest;
 
@@ -17,7 +16,7 @@ public class DepositPositiveValuesTest extends BaseTest {
     @DisplayName("Проверка допустимых значений суммы вклада")
     public void checkDepositValue() {
         Integer depositValue = 100_000_0;
-        DepositPage depositPage = new StartPage()
+        DepositPage depositPage = new HomePage()
                 .openHomePage()
                 .gotoDeposits()
                 .checkDepositValue(depositValue);
@@ -28,7 +27,7 @@ public class DepositPositiveValuesTest extends BaseTest {
     @DisplayName("Проверка допустимых значений сроков вклада")
     public void checkTermValue() {
         Integer termValue = 12;
-        DepositPage depositPage = new StartPage()
+        DepositPage depositPage = new HomePage()
                 .openHomePage()
                 .gotoDeposits()
                 .checkTermValue(termValue);

@@ -15,8 +15,8 @@ import static com.codeborne.selenide.Selenide.*;
 
 public class DepositPage {
 
-    private final ElementsCollection depositInfo = $$x("//h4/preceding-sibling::div[preceding-sibling::h4//ul]");
-    //private final ElementsCollection depositInfo    = $$x("//h3");
+    /*private final ElementsCollection depositInfo = $$x("//h4/preceding-sibling::div[preceding-sibling::h4//ul]");
+    private final ElementsCollection depositInfo    = $$x("//h3");*/
     private final SelenideElement depositInput = $x("//div[@label='Сумма вклада']/input");
     private final SelenideElement termInput = $x("//div[@label='Срок вклада']/input");
     private final SelenideElement minDepositValue = $x("//li[1][contains(@class, 'Border-sc')]");

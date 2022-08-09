@@ -15,9 +15,7 @@ import pages.smallBuiness.SmallBusinessPage;
 import static com.codeborne.selenide.Configuration.baseUrl;
 import static com.codeborne.selenide.Selenide.$x;
 
-public class StartPage {
-    private final String URL = "https://www.mtsbank.ru/";
-
+public class HomePage {
     private final SelenideElement officesAndBanks = $x("//div[@id='top']//a[@data-testid='link']");
     private final SelenideElement offers = $x("//a[@href='/offers']");
     private final SelenideElement smallBusiness = $x("//a[@href='/malomu-biznesu/']");
@@ -28,7 +26,7 @@ public class StartPage {
     private final SelenideElement onlineBank = $x("//div[@id='bottom']");
 
     @Step("Открываем https://www.mtsbank.ru")
-    public StartPage openHomePage() {
+    public HomePage openHomePage() {
         Selenide.open(baseUrl);
         return this;
     }

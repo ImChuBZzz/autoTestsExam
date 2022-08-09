@@ -5,7 +5,7 @@ import io.qameta.allure.Owner;
 import io.qameta.allure.Story;
 import io.qameta.allure.junit4.DisplayName;
 import org.junit.Test;
-import pages.StartPage;
+import pages.HomePage;
 import pages.onlineBank.OnlineBankPage;
 import tests.BaseTest;
 
@@ -16,7 +16,7 @@ public class OnlineBankTermsAndPolicyTest extends BaseTest {
     @DisplayName("Условия доступа")
     @Test
     public void expectedTermsPDF() {
-        OnlineBankPage onlineBankPage = new StartPage()
+        OnlineBankPage onlineBankPage = new HomePage()
                 .openHomePage()
                 .gotoOnlineBank()
                 .accessTermsDownload();

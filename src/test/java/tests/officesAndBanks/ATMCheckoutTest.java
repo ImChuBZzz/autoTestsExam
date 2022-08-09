@@ -3,11 +3,10 @@ package tests.officesAndBanks;
 
 import io.qameta.allure.Feature;
 import io.qameta.allure.Owner;
-import io.qameta.allure.Story;
 import io.qameta.allure.junit4.DisplayName;
 import org.junit.Test;
 import pages.officesAndBanks.OfficesAndBanksPage;
-import pages.StartPage;
+import pages.HomePage;
 import tests.BaseTest;
 
 @Owner("автор - Александр Черняев")
@@ -17,7 +16,7 @@ public class ATMCheckoutTest extends BaseTest {
     @Test
     @DisplayName("Проверяем наличие доступных банкоматов")
     public void atbNotEmptyCheck() {
-        OfficesAndBanksPage officesAndBanksPage = new StartPage()
+        OfficesAndBanksPage officesAndBanksPage = new HomePage()
                 .openHomePage()
                 .gotoOfficesAndBanks()
                 .loading()

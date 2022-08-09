@@ -5,7 +5,7 @@ import io.qameta.allure.Owner;
 import io.qameta.allure.Story;
 import io.qameta.allure.junit4.DisplayName;
 import org.junit.Test;
-import pages.StartPage;
+import pages.HomePage;
 import pages.mortgage.MortgageItPage;
 import tests.BaseTest;
 
@@ -19,7 +19,7 @@ public class MortgagePaymentsGraphTest extends BaseTest {
         String propertyPrice = "10000000";
         String firstFee = "3000000";
         String creditTerm = "15";
-        MortgageItPage mortgageItPage = new StartPage()
+        MortgageItPage mortgageItPage = new HomePage()
                 .openHomePage()
                 .gotoMortgageForIt()
                 .propertyPriceInput(propertyPrice)

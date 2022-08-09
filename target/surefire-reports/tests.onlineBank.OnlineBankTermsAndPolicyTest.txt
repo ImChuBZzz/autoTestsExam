@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: tests.onlineBank.OnlineBankTermsAndPolicyTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.807 s - in tests.onlineBank.OnlineBankTermsAndPolicyTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.32 s - in tests.onlineBank.OnlineBankTermsAndPolicyTest

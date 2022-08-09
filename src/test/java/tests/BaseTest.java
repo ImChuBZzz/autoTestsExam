@@ -16,27 +16,39 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 public abstract class BaseTest {
 
     @Before
-    public void init() {
+    /*public void init() {
         Configuration.browser = "chrome";
         Configuration.browserSize = "1920x1080";
         Configuration.remote = "http://localhost:4444/wd/hub";
         Configuration.pageLoadTimeout = 35000;
         Configuration.timeout = 30000;
+        Configuration.headless = true;
         Configuration.baseUrl = "https://www.mtsbank.ru";
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("enableVNC", true);
         Configuration.browserCapabilities = capabilities;
-        SelenideLogger.addListener("AllureSelenide", new AllureSelenide().screenshots(true));
+        SelenideLogger.addListener("AllureSelenide",
+                new AllureSelenide()
+                        .screenshots(true)
+                        .savePageSource(false)
+        );
 
-    }
+    }*/
 
-    /*public void init() {
+    public void init() {
         WebDriverManager.chromedriver().cachePath("D:\\Apps\\tools\\drivers\\chrome").setup();
         Configuration.browser = "chrome";
         Configuration.driverManagerEnabled = true;
         Configuration.headless = false;
         Configuration.browserSize = "1920x1080";
-    }*/
+        Configuration.timeout = 30000;
+        Configuration.baseUrl = "https://www.mtsbank.ru";
+        SelenideLogger.addListener("AllureSelenide",
+                new AllureSelenide()
+                        .screenshots(true)
+                        .savePageSource(false)
+        );
+    }
     @Step("Драйвер, давай до свидания")
     @After
     public void shutDown() {

@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: tests.officesAndBanks.ATMCheckoutTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.721 s - in tests.officesAndBanks.ATMCheckoutTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 27.744 s - in tests.officesAndBanks.ATMCheckoutTest

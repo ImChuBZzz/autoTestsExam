@@ -1,6 +1,7 @@
 tests\officesAndBanks\ATMCheckoutTest.class
 tests\mortgage\MortgagePaymentsGraphTest.class
 tests\onlineBank\OnlineBankTermsAndPolicyTest.class
+pages\HomePage.class
 pages\offers\OffersPage.class
 pages\deposit\DepositPage.class
 tests\BaseTest.class
@@ -10,7 +11,6 @@ tests\onlineBank\OnlineBankLoginTest.class
 pages\cards\CardOrder.class
 pages\officesAndBanks\OfficesAndBanksPage.class
 pages\smallBuiness\SmallBusinessPage.class
-pages\StartPage.class
 tests\smallBusiness\AccountDocsAccessTest.class
 pages\mortgage\MortgageItPage.class
 pages\onlineBank\OnlineBankPage.class

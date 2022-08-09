@@ -21,19 +21,26 @@ public class CardOrder {
 
     @Step("Вводим телефон для получения кода подтверждения")
     public CardOrder inputPhone(String phone) {
-        phoneInput.scrollTo().sendKeys(phone);
+        phoneInput.sendKeys(phone);
         return this;
     }
 
     @Step("Пустое значение в поле 'телефон'")
     public CardOrder inputEmptyPhone() {
-        phoneInput.scrollTo().sendKeys("");
+        phoneInput.sendKeys("");
+        return this;
+    }
+
+    @Step("Вводим неполный номер телефона(меньше 10 цифр)")
+    public CardOrder inputIncorrectPhone(String phone) {
+        phoneInput.sendKeys(phone);
         return this;
     }
 
     @Step("Неверный номер!")
     public CardOrder warning(String message) {
         phoneError.shouldBe(Condition.exist).shouldHave(Condition.text(message));
+        //Selenide.sleep(5000);
         return this;
     }
 

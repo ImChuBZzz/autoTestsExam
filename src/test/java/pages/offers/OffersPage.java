@@ -9,14 +9,14 @@ import io.qameta.allure.Step;
 import static com.codeborne.selenide.Selenide.*;
 
 public class OffersPage {
-    private final SelenideElement offersFromBaksCheckbox = $x("//div[text()='Акции от банка']");
+    private final SelenideElement offersFromBanksCheckbox = $x("//div[text()='Акции от банка']");
     private final ElementsCollection offersFromBanks = $$("[class*=Offers__Wrapper] a");
     private final SelenideElement offersCheckboxCount = $x("//input[@name='category[21]']/ancestor::label//span");
 
 
     @Step("Выбираем фильтр 'Акции банка'")
     public OffersPage offersFromBanksCheckboxOn() {
-        offersFromBaksCheckbox.scrollTo().click();
+        offersFromBanksCheckbox.scrollTo().click();
         return this;
     }
 

@@ -23,6 +23,7 @@ public class SmallBusinessPage {
                 .scrollTo().click();
         return this;
     }
+
     @Step("Проверяем валидность ссылки на телеграмм")
     public SmallBusinessPage checkTgUrl(String url) {
         Selenide.switchTo().window(1);
@@ -31,13 +32,13 @@ public class SmallBusinessPage {
         return this;
     }
 
-
     @Step("Выбираем вКонтакте")
     public SmallBusinessPage vkUrl() {
         vk.shouldBe(Condition.visible)
                 .scrollTo().click();
         return this;
     }
+
     @Step("Проверяем валидность ссылки на вконтакте")
     public SmallBusinessPage checkVkUrl(String url) {
         Selenide.switchTo().window(1);
@@ -52,6 +53,7 @@ public class SmallBusinessPage {
                 .scrollTo().click();
         return this;
     }
+
     @Step("Проверяем валидность ссылки на одноклассники")
     public SmallBusinessPage checkOkUrl(String url) {
         Selenide.switchTo().window(1);
