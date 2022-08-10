@@ -11,6 +11,7 @@ import pages.HomePage;
 import tests.BaseTest;
 
 @Owner("автор - Александр Черняев")
+@DisplayName("Проверка акций от банка")
 public class BanksOffersTest extends BaseTest {
     @Rule
     public RetryRule retryRule = new RetryRule(3);

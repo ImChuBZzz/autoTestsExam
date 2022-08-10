@@ -12,6 +12,7 @@ import pages.HomePage;
 import tests.BaseTest;
 
 @Owner("автор - Александр Черняев")
+@DisplayName("Проверка списка банкоматов в Москве")
 public class ATMCheckoutTest extends BaseTest {
     @Rule
     public RetryRule retryRule = new RetryRule(3);

@@ -13,6 +13,7 @@ import pages.HomePage;
 import tests.BaseTest;
 
 @Owner("автор - Александр Черняев")
+@DisplayName("Проверка ссылок на соцсети")
 public class SmallBusinessSocialsTest extends BaseTest {
 
     @Rule

@@ -11,6 +11,7 @@ import pages.deposit.DepositPage;
 import tests.BaseTest;
 
 @Owner("автор - Александр Черняев")
+@DisplayName("Не выходим за допустимые значения депозита и срока")
 public class DepositPositiveValuesTest extends BaseTest {
     @Rule
     public RetryRule retryRule = new RetryRule(3);

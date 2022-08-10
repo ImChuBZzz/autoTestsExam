@@ -12,6 +12,7 @@ import pages.mortgage.MortgageItPage;
 import tests.BaseTest;
 
 @Owner("автор - Александр Черняев")
+@DisplayName("Проверка сроков ипотеки")
 public class MortgagePaymentsGraphTest extends BaseTest {
     @Rule
     public RetryRule retryRule = new RetryRule(3);

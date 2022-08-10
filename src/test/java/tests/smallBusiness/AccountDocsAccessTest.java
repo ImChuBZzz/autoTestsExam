@@ -13,6 +13,7 @@ import pages.HomePage;
 import tests.BaseTest;
 
 @Owner("автор - Александр Черняев")
+@DisplayName("Проверка документа 'Правила оформления Поручений на перевод иностранной валюты'")
 public class AccountDocsAccessTest extends BaseTest {
 
     @Rule
@@ -20,7 +21,7 @@ public class AccountDocsAccessTest extends BaseTest {
 
     @Feature(value = "Малый бизнес и ИП")
     @Story(value = "Расчетный счет")
-    @Ignore("этот документ убрали с сайта в 08.08.2022")
+    @Ignore("этот документ убрали с сайта 08.08.2022")
     @Test
     @DisplayName("Документы об изменении тарифов")
     public void tariffPDFAccessTest() {

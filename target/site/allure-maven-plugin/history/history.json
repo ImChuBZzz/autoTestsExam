@@ -1,24 +1,4 @@
 {
-  "2bb7d4bfede2758d216889ba5ddf01d4" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 1,
-      "passed" : 0,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "e385a09bb2424712",
-      "status" : "skipped",
-      "statusDetails" : "pdf readonly и не получается взять заголовок",
-      "time" : {
-        "start" : 1660139468918,
-        "stop" : 1660139468918,
-        "duration" : 0
-      }
-    } ]
-  },
   "9cd23e75f8c7391c7d33d52761692cf8" : {
     "statistic" : {
       "failed" : 0,
@@ -29,12 +9,32 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "448d3dd5930b8990",
+      "uid" : "c939ab4c7053321d",
       "status" : "passed",
       "time" : {
-        "start" : 1660139463049,
-        "stop" : 1660139468913,
-        "duration" : 5864
+        "start" : 1660150658776,
+        "stop" : 1660150664949,
+        "duration" : 6173
+      }
+    } ]
+  },
+  "2bb7d4bfede2758d216889ba5ddf01d4" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "1847eafef383f0b5",
+      "status" : "skipped",
+      "statusDetails" : "pdf readonly и не получается взять заголовок",
+      "time" : {
+        "start" : 1660150664954,
+        "stop" : 1660150664954,
+        "duration" : 0
       }
     } ]
   },
@@ -48,31 +48,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "86b72b5ce59d6326",
+      "uid" : "420cb57657616736",
       "status" : "passed",
       "time" : {
-        "start" : 1660139446437,
-        "stop" : 1660139451310,
-        "duration" : 4873
-      }
-    } ]
-  },
-  "87f91d14f9bb8b46cdce6a602090fd86" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "9c72e90cf6b838c9",
-      "status" : "passed",
-      "time" : {
-        "start" : 1660139451313,
-        "stop" : 1660139456908,
-        "duration" : 5595
+        "start" : 1660150573435,
+        "stop" : 1660150578531,
+        "duration" : 5096
       }
     } ]
   },
@@ -86,12 +67,31 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "7dfaf3e984a41454",
+      "uid" : "51a1399416042444",
       "status" : "passed",
       "time" : {
-        "start" : 1660139385489,
-        "stop" : 1660139395089,
-        "duration" : 9600
+        "start" : 1660150510458,
+        "stop" : 1660150520362,
+        "duration" : 9904
+      }
+    } ]
+  },
+  "87f91d14f9bb8b46cdce6a602090fd86" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b79121c37a0df20c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1660150578536,
+        "stop" : 1660150583428,
+        "duration" : 4892
       }
     } ]
   },
@@ -105,12 +105,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "bfd7cf686d66b92c",
+      "uid" : "937b47f1d735c52a",
       "status" : "passed",
       "time" : {
-        "start" : 1660139468924,
-        "stop" : 1660139476471,
-        "duration" : 7547
+        "start" : 1660150664959,
+        "stop" : 1660150693633,
+        "duration" : 28674
       }
     } ]
   },
@@ -124,12 +124,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "523e3a8ef090b1e2",
+      "uid" : "c37ca7ad97b23564",
       "status" : "passed",
       "time" : {
-        "start" : 1660139482904,
-        "stop" : 1660139491247,
-        "duration" : 8343
+        "start" : 1660150700493,
+        "stop" : 1660150707396,
+        "duration" : 6903
       }
     } ]
   },
@@ -143,12 +143,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "e1134ecb1eb5c87d",
+      "uid" : "ddcbd8ea3908ac8e",
       "status" : "passed",
       "time" : {
-        "start" : 1660139431702,
-        "stop" : 1660139437523,
-        "duration" : 5821
+        "start" : 1660150557676,
+        "stop" : 1660150564548,
+        "duration" : 6872
       }
     } ]
   },
@@ -162,12 +162,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "128d7ab5e1a41f3e",
+      "uid" : "913fe4b1824160ab",
       "status" : "passed",
       "time" : {
-        "start" : 1660139403564,
-        "stop" : 1660139411789,
-        "duration" : 8225
+        "start" : 1660150529154,
+        "stop" : 1660150537699,
+        "duration" : 8545
       }
     } ]
   },
@@ -181,12 +181,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "551db932e4f7f3f6",
+      "uid" : "c6ce859edf54bb8f",
       "status" : "skipped",
       "statusDetails" : "этот документ убрали с сайта в 08.08.2022",
       "time" : {
-        "start" : 1660139476475,
-        "stop" : 1660139476475,
+        "start" : 1660150693637,
+        "stop" : 1660150693637,
         "duration" : 0
       }
     } ]
@@ -201,12 +201,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "49ce29ed76fb828a",
+      "uid" : "b2161a4e782fdb7c",
       "status" : "passed",
       "time" : {
-        "start" : 1660139456911,
-        "stop" : 1660139463044,
-        "duration" : 6133
+        "start" : 1660150583430,
+        "stop" : 1660150658769,
+        "duration" : 75339
       }
     } ]
   },
@@ -220,12 +220,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "c201f036b793092b",
+      "uid" : "4f4640206487c7f7",
       "status" : "passed",
       "time" : {
-        "start" : 1660139423528,
-        "stop" : 1660139431696,
-        "duration" : 8168
+        "start" : 1660150549643,
+        "stop" : 1660150557670,
+        "duration" : 8027
       }
     } ]
   },
@@ -239,12 +239,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "986e8fda0342c7da",
+      "uid" : "eb00f295e719319f",
       "status" : "passed",
       "time" : {
-        "start" : 1660139395193,
-        "stop" : 1660139403559,
-        "duration" : 8366
+        "start" : 1660150520457,
+        "stop" : 1660150529147,
+        "duration" : 8690
       }
     } ]
   },
@@ -258,12 +258,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "8605fb22dd69c33b",
+      "uid" : "db655c48f2531c31",
       "status" : "passed",
       "time" : {
-        "start" : 1660139411799,
-        "stop" : 1660139417769,
-        "duration" : 5970
+        "start" : 1660150537708,
+        "stop" : 1660150543652,
+        "duration" : 5944
       }
     } ]
   },
@@ -277,16 +277,16 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "f82c60afbdf54fc0",
+      "uid" : "9163f09b65f59789",
       "status" : "passed",
       "time" : {
-        "start" : 1660139417772,
-        "stop" : 1660139423521,
-        "duration" : 5749
+        "start" : 1660150543656,
+        "stop" : 1660150549636,
+        "duration" : 5980
       }
     } ]
   },
-  "a4ecc977299613db61ee371d08877b25" : {
+  "bb0ba41262bf8034cf9f201c18269821" : {
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
@@ -296,12 +296,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "e42cef2efd104d64",
+      "uid" : "a3b131102dc19ace",
       "status" : "passed",
       "time" : {
-        "start" : 1660139437528,
-        "stop" : 1660139446431,
-        "duration" : 8903
+        "start" : 1660150564554,
+        "stop" : 1660150573429,
+        "duration" : 8875
       }
     } ]
   },
@@ -315,12 +315,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "923fd855c43bb85f",
+      "uid" : "2b65d011411b5572",
       "status" : "passed",
       "time" : {
-        "start" : 1660139476481,
-        "stop" : 1660139482898,
-        "duration" : 6417
+        "start" : 1660150693642,
+        "stop" : 1660150700487,
+        "duration" : 6845
       }
     } ]
   },
@@ -334,12 +334,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "c1c01889cbc44a15",
+      "uid" : "feba9bd39e4f7383",
       "status" : "passed",
       "time" : {
-        "start" : 1660139491250,
-        "stop" : 1660139497277,
-        "duration" : 6027
+        "start" : 1660150707399,
+        "stop" : 1660150713443,
+        "duration" : 6044
       }
     } ]
   }

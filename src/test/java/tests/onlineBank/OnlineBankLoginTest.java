@@ -12,6 +12,7 @@ import pages.onlineBank.OnlineBankPage;
 import tests.BaseTest;
 
 @Owner("автор - Александр Черняев")
+@DisplayName("Проверка логина в онлайн банк как частное лицо")
 public class OnlineBankLoginTest extends BaseTest {
     @Rule
     public RetryRule retryRule = new RetryRule(3);

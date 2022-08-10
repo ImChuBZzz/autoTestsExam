@@ -14,6 +14,7 @@ import pages.cards.CardOrder;
 import tests.BaseTest;
 
 @Owner("автор - Александр Черняев")
+@DisplayName("Оформление виртуальной карты")
 public class VirtualCardOrderTest extends BaseTest {
     @Rule
     public RetryRule retryRule = new RetryRule(3);

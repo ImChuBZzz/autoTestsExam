@@ -1,0 +1,66 @@
+{
+  "uid" : "c6ce859edf54bb8f",
+  "name" : "Документы об изменении тарифов",
+  "fullName" : "tests.smallBusiness.AccountDocsAccessTest.tariffPDFAccessTest",
+  "historyId" : "7193ec19f67c9f40d21c293108724054",
+  "time" : {
+    "start" : 1660150693637,
+    "stop" : 1660150693637,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "statusMessage" : "этот документ убрали с сайта в 08.08.2022",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "tests.smallBusiness"
+  }, {
+    "name" : "testClass",
+    "value" : "tests.smallBusiness.AccountDocsAccessTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "tariffPDFAccessTest"
+  }, {
+    "name" : "suite",
+    "value" : "Проверка документа 'Правила оформления Поручений на перевод иностранной валюты'"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-KT0G865"
+  }, {
+    "name" : "thread",
+    "value" : "2476@DESKTOP-KT0G865.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "story",
+    "value" : "Расчетный счет"
+  }, {
+    "name" : "feature",
+    "value" : "Малый бизнес и ИП"
+  }, {
+    "name" : "owner",
+    "value" : "автор - Александр Черняев"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "owner" : "автор - Александр Черняев",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c6ce859edf54bb8f.json",
+  "parameterValues" : [ ]
+}

@@ -1,8 +1,8 @@
 {
   "total" : 9,
   "items" : [ {
-    "uid" : "1ffc5846ad54c1b11f1179f8b6f88c44",
-    "name" : "tests.cards.VirtualCardOrderTest",
+    "uid" : "7ce216522dda52a997c109c29f55f854",
+    "name" : "Оформление виртуальной карты",
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
@@ -12,8 +12,8 @@
       "total" : 3
     }
   }, {
-    "uid" : "e779bf847f07ebd883f733f1c99ee569",
-    "name" : "tests.onlineBank.OnlineBankLoginTest",
+    "uid" : "05aa27f2f46eb668695ea30617fe1270",
+    "name" : "Проверка логина в онлайн банк как частное лицо",
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
@@ -23,8 +23,8 @@
       "total" : 3
     }
   }, {
-    "uid" : "603afbe8cbdcc08e87667c47c28fba3d",
-    "name" : "tests.smallBusiness.SmallBusinessSocialsTest",
+    "uid" : "69f8bc8ba652d87635ebc7ed7e2d627c",
+    "name" : "Проверка ссылок на соцсети",
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
@@ -34,8 +34,8 @@
       "total" : 3
     }
   }, {
-    "uid" : "50e1d8403d862017b1b1f812f3a1ac7d",
-    "name" : "tests.deposit.DepositPositiveValuesTest",
+    "uid" : "ed39ef83bd9c42bd506b39afb8e853f1",
+    "name" : "Не выходим за допустимые значения депозита и срока",
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
@@ -45,8 +45,8 @@
       "total" : 2
     }
   }, {
-    "uid" : "e5e640194c3c8b5cc1e9dcf8cc9b6582",
-    "name" : "tests.onlineBank.OnlineBankTermsAndPolicyTest",
+    "uid" : "ae99d21068fb454ff4f61c4c811af631",
+    "name" : "Проверка файлов по ссылкам 'условия доступа' и 'политика конфиденциальности'",
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
@@ -56,8 +56,8 @@
       "total" : 2
     }
   }, {
-    "uid" : "7e10f1c7120b4567ee2ad0b4c9d5ab06",
-    "name" : "tests.smallBusiness.AccountDocsAccessTest",
+    "uid" : "f5f3c0ff5e9fea84ebba28c3c57773fb",
+    "name" : "Проверка документа 'Правила оформления Поручений на перевод иностранной валюты'",
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
@@ -67,8 +67,8 @@
       "total" : 2
     }
   }, {
-    "uid" : "cd4422cb8632befcb1c7269ebdc91d55",
-    "name" : "tests.mortgage.MortgagePaymentsGraphTest",
+    "uid" : "99cf2113e5e43106e1bedb2c2f822e49",
+    "name" : "Проверка сроков ипотеки",
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
@@ -78,8 +78,8 @@
       "total" : 1
     }
   }, {
-    "uid" : "f2a5cc9a63628fa4604c65c2c8f25e5f",
-    "name" : "tests.offers.BanksOffersTest",
+    "uid" : "6123cc3a477315de007a1604bec51f33",
+    "name" : "Проверка акций от банка",
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
@@ -89,8 +89,8 @@
       "total" : 1
     }
   }, {
-    "uid" : "87a8375011ea691464ca2293bc53cce2",
-    "name" : "tests.officesAndBanks.ATMCheckoutTest",
+    "uid" : "4eadfd4c64db0ed1e3033c934bfa2e49",
+    "name" : "Проверка списка банкоматов в Москве",
     "statistic" : {
       "failed" : 0,
       "broken" : 0,

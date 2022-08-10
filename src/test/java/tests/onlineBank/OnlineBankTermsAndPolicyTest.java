@@ -13,6 +13,7 @@ import pages.onlineBank.OnlineBankPage;
 import tests.BaseTest;
 
 @Owner("автор - Александр Черняев")
+@DisplayName("Проверка файлов по ссылкам 'условия доступа' и 'политика конфиденциальности'")
 public class OnlineBankTermsAndPolicyTest extends BaseTest {
     @Rule
     public RetryRule retryRule = new RetryRule(3);
