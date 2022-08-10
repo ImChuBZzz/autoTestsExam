@@ -1,6 +1,6 @@
-<h1 align="center">Итоговая работа по курсу "Автоматизация тестирования"</h1>
+<h1 align="center"><a href="https://imchubzzz.github.io/autoTestsExam/28/" style="color: darkgrey ">Итоговая работа по курсу "Автоматизация тестирования"</a></h1>
 <p>последняя сборка<br>
-[![test-build](https://github.com/ImChuBZzz/autoTestsExam/actions/workflows/main.yml/badge.svg)](https://github.com/ImChuBZzz/autoTestsExam/actions/workflows/main.yml)<br>
+<img src="https://github.com/ImChuBZzz/autoTestsExam/actions/workflows/main.yml/badge.svg?branch=main"><br>
 <h2>Задание:</h2>
 <ul type="square">
 <h3>
@@ -23,4 +23,4 @@
  <li>С главной страницы переходим в раздел "Офисы и банкоматы", переключаем на вид "списком", оставляем в фильтре только "*банкоматы*" и проверяем что в списке есть банкоматы.
 </h3></ol>
 
-
+<h2 align="center" ><a href="https://imchubzzz.github.io/autoTestsExam/28/" style="color: darkgrey ">Результат</a>
