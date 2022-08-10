@@ -1,6 +1,5 @@
 <h1 align="center"><a href="https://imchubzzz.github.io/autoTestsExam/28/" style="color: darkgrey ">Итоговая работа по курсу "Автоматизация тестирования"</a></h1>
-<p>последняя сборка<br>
-<img src="https://github.com/ImChuBZzz/autoTestsExam/actions/workflows/main.yml/badge.svg?branch=main"><br>
+
 <h2>Задание:</h2>
 <ul type="square">
 <h3>
