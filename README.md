@@ -1,6 +1,6 @@
 <h1 align="center">Итоговая работа по курсу "Автоматизация тестирования"</h1>
 <p>последняя сборка<br>
-[![Build Status](https://github.com/ImChuBZzz/autoTestsExam/actions/workflows/main.yml/badge.svg?branch=master)](https://github.com/ImChuBZzz/autoTestsExam/actions/workflows/main.yml)<br>
+<img src="https://github.com/ImChuBZzz/autoTestsExam/actions/workflows/main.yml/badge.svg?branch=main"><br>
 <h2>Задание:</h2>
 <ul type="square">
 <h3>
