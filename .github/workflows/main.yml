@@ -1,9 +1,9 @@
 name: test-build
 
-on:
-  push:
-    branches-ignore:
-      - '!master'
+on: workflow_dispatch
+  #push:
+  #  branches-ignore:
+  #    - '!master'
 
 jobs:
   autotests:
