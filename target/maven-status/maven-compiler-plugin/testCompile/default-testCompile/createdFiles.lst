@@ -5,6 +5,7 @@ pages\HomePage.class
 pages\offers\OffersPage.class
 pages\deposit\DepositPage.class
 tests\BaseTest.class
+helpers\RetryRule$1.class
 pages\cards\CardsPage.class
 tests\cards\VirtualCardOrderTest.class
 tests\onlineBank\OnlineBankLoginTest.class
@@ -18,3 +19,4 @@ tests\deposit\DepositPositiveValuesTest.class
 tests\smallBusiness\SmallBusinessSocialsTest.class
 pages\smallBuiness\SmallBusinessAccountPage.class
 tests\offers\BanksOffersTest.class
+helpers\RetryRule.class

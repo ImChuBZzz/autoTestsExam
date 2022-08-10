@@ -23,6 +23,7 @@ public abstract class BaseTest {
         Configuration.pageLoadTimeout = 45000;
         Configuration.timeout = 30000;
         Configuration.headless = false;
+        Configuration.savePageSource = false;
         Configuration.baseUrl = "https://www.mtsbank.ru";
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("enableVNC", false);
@@ -42,6 +43,7 @@ public abstract class BaseTest {
         Configuration.headless = false;
         Configuration.browserSize = "1920x1080";
         Configuration.timeout = 30000;
+        Configuration.savePageSource = false;
         Configuration.baseUrl = "https://www.mtsbank.ru";
         SelenideLogger.addListener("AllureSelenide",
                 new AllureSelenide()

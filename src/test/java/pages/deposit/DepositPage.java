@@ -26,8 +26,8 @@ public class DepositPage {
 
     @Step("Сумма депозита не превышает пределы [1.000 - 50.000.00] рублей")
     public DepositPage checkDepositValue(Integer value) {
-        depositInput.sendKeys(Keys.LEFT_CONTROL + "a");
-        depositInput.sendKeys(Keys.BACK_SPACE);
+        depositInput.sendKeys(Keys.LEFT_CONTROL + "a", Keys.BACK_SPACE);
+        //depositInput.sendKeys(Keys.BACK_SPACE);
         depositInput.setValue(value.toString()).sendKeys(Keys.TAB);
         int minValue = Integer.parseInt(minDepositValue.text().replaceAll("\\D", ""));
         int maxValue = Integer.parseInt(maxDepositValue.text().replaceAll("\\D", ""));

@@ -1,9 +1,11 @@
 package tests.onlineBank;
 
+import helpers.RetryRule;
 import io.qameta.allure.Feature;
 import io.qameta.allure.Owner;
 import io.qameta.allure.Story;
 import io.qameta.allure.junit4.DisplayName;
+import org.junit.Rule;
 import org.junit.Test;
 import pages.HomePage;
 import pages.onlineBank.OnlineBankPage;
@@ -11,6 +13,8 @@ import tests.BaseTest;
 
 @Owner("автор - Александр Черняев")
 public class OnlineBankLoginTest extends BaseTest {
+    @Rule
+    public RetryRule retryRule = new RetryRule(3);
 
     @Feature(value = "Онлайн банк")
     @Story(value = "Авторизация успешная")

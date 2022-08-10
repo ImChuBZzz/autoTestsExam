@@ -1,8 +1,10 @@
 package tests.deposit;
 
+import helpers.RetryRule;
 import io.qameta.allure.Feature;
 import io.qameta.allure.Owner;
 import io.qameta.allure.junit4.DisplayName;
+import org.junit.Rule;
 import org.junit.Test;
 import pages.HomePage;
 import pages.deposit.DepositPage;
@@ -10,12 +12,14 @@ import tests.BaseTest;
 
 @Owner("автор - Александр Черняев")
 public class DepositPositiveValuesTest extends BaseTest {
+    @Rule
+    public RetryRule retryRule = new RetryRule(3);
 
     @Feature(value = "Вклады")
     @Test
     @DisplayName("Проверка допустимых значений суммы вклада")
     public void checkDepositValue() {
-        Integer depositValue = 100_000_0;
+        Integer depositValue = 1_000_0;
         DepositPage depositPage = new HomePage()
                 .openHomePage()
                 .gotoDeposits()

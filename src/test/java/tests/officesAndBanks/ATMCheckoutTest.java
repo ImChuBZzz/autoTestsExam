@@ -1,9 +1,11 @@
 package tests.officesAndBanks;
 
 
+import helpers.RetryRule;
 import io.qameta.allure.Feature;
 import io.qameta.allure.Owner;
 import io.qameta.allure.junit4.DisplayName;
+import org.junit.Rule;
 import org.junit.Test;
 import pages.officesAndBanks.OfficesAndBanksPage;
 import pages.HomePage;
@@ -11,6 +13,8 @@ import tests.BaseTest;
 
 @Owner("автор - Александр Черняев")
 public class ATMCheckoutTest extends BaseTest {
+    @Rule
+    public RetryRule retryRule = new RetryRule(3);
 
     @Feature(value = "Офисы и банкоматы")
     @Test

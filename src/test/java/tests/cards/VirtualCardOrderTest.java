@@ -1,10 +1,13 @@
 package tests.cards;
 
 
+import helpers.RetryRule;
 import io.qameta.allure.Feature;
 import io.qameta.allure.Owner;
 import io.qameta.allure.Story;
 import io.qameta.allure.junit4.DisplayName;
+import org.junit.ClassRule;
+import org.junit.Rule;
 import org.junit.Test;
 import pages.HomePage;
 import pages.cards.CardOrder;
@@ -12,6 +15,8 @@ import tests.BaseTest;
 
 @Owner("автор - Александр Черняев")
 public class VirtualCardOrderTest extends BaseTest {
+    @Rule
+    public RetryRule retryRule = new RetryRule(3);
 
     @Feature(value = "Карты")
     @Story(value = "Виртуальная карта")
