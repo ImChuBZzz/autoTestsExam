@@ -1,0 +1,508 @@
+{
+  "uid" : "e42cef2efd104d64",
+  "name" : "Проверяем наличие доступных банкоматов",
+  "fullName" : "tests.officesAndBanks.ATMCheckoutTest.atbNotEmptyCheck",
+  "historyId" : "a4ecc977299613db61ee371d08877b25",
+  "time" : {
+    "start" : 1660139437528,
+    "stop" : 1660139446431,
+    "duration" : 8903
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Открываем https://www.mtsbank.ru",
+      "time" : {
+        "start" : 1660139437528,
+        "stop" : 1660139441226,
+        "duration" : 3698
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"open\") https://www.mtsbank.ru",
+        "time" : {
+          "start" : 1660139437528,
+          "stop" : 1660139441226,
+          "duration" : 3698
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "$(\"webdriver\") create()",
+          "time" : {
+            "start" : 1660139437528,
+            "stop" : 1660139439597,
+            "duration" : 2069
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0,
+          "stepsCount" : 0,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 1,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Переход на вкладку 'Офисы и банкоматы'",
+      "time" : {
+        "start" : 1660139441226,
+        "stop" : 1660139441370,
+        "duration" : 144
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"By.xpath: //div[@id='top']//a[@data-testid='link']\") should be(visible)",
+        "time" : {
+          "start" : 1660139441226,
+          "stop" : 1660139441257,
+          "duration" : 31
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "$(\"By.xpath: //div[@id='top']//a[@data-testid='link']\") click()",
+        "time" : {
+          "start" : 1660139441257,
+          "stop" : 1660139441370,
+          "duration" : 113
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Ждём-с прогрузку....",
+      "time" : {
+        "start" : 1660139441370,
+        "stop" : 1660139445417,
+        "duration" : 4047
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"By.xpath: //div[@data-testid='heading']\") should not be(exist)",
+        "time" : {
+          "start" : 1660139441370,
+          "stop" : 1660139445417,
+          "duration" : 4047
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 1,
+      "hasContent" : true
+    }, {
+      "name" : "Переключаемся на фильтр 'Список'",
+      "time" : {
+        "start" : 1660139445417,
+        "stop" : 1660139445669,
+        "duration" : 252
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"By.xpath: //div[@data-testid='tabsbar']//button[2]\") should be([exist, 30 s.])",
+        "time" : {
+          "start" : 1660139445417,
+          "stop" : 1660139445466,
+          "duration" : 49
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "$(\"By.xpath: //div[@data-testid='tabsbar']//button[2]\") click()",
+        "time" : {
+          "start" : 1660139445466,
+          "stop" : 1660139445669,
+          "duration" : 203
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "кликаем на 'Список'",
+      "time" : {
+        "start" : 1660139445670,
+        "stop" : 1660139445815,
+        "duration" : 145
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"By.xpath: //div[@class='styled__Container-sc-szata3-0 jhjBtN']\") should be(exist)",
+        "time" : {
+          "start" : 1660139445670,
+          "stop" : 1660139445716,
+          "duration" : 46
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "$(\"By.xpath: //div[@class='styled__Container-sc-szata3-0 jhjBtN']\") click()",
+        "time" : {
+          "start" : 1660139445716,
+          "stop" : 1660139445815,
+          "duration" : 99
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Кликаем на 'офисы'",
+      "time" : {
+        "start" : 1660139445815,
+        "stop" : 1660139445997,
+        "duration" : 182
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"By.xpath: //div[text()='Офисы МТС Банка']\") scroll to()",
+        "time" : {
+          "start" : 1660139445815,
+          "stop" : 1660139445867,
+          "duration" : 52
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "$(\"By.xpath: //div[text()='Офисы МТС Банка']\") click()",
+        "time" : {
+          "start" : 1660139445867,
+          "stop" : 1660139445997,
+          "duration" : 130
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Кликаем на 'салоны'",
+      "time" : {
+        "start" : 1660139445997,
+        "stop" : 1660139446137,
+        "duration" : 140
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"By.xpath: //div[text()='Салон МТС']\") click()",
+        "time" : {
+          "start" : 1660139445997,
+          "stop" : 1660139446137,
+          "duration" : 140
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 1,
+      "hasContent" : true
+    }, {
+      "name" : "Кликаем на 'терминалы'",
+      "time" : {
+        "start" : 1660139446137,
+        "stop" : 1660139446272,
+        "duration" : 135
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"By.xpath: //div[text()='Терминалы']\") click()",
+        "time" : {
+          "start" : 1660139446137,
+          "stop" : 1660139446271,
+          "duration" : 134
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 1,
+      "hasContent" : true
+    }, {
+      "name" : "кликаем на 'Список'",
+      "time" : {
+        "start" : 1660139446272,
+        "stop" : 1660139446361,
+        "duration" : 89
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"By.xpath: //div[@class='styled__Container-sc-szata3-0 jhjBtN']\") should be(exist)",
+        "time" : {
+          "start" : 1660139446272,
+          "stop" : 1660139446296,
+          "duration" : 24
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "$(\"By.xpath: //div[@class='styled__Container-sc-szata3-0 jhjBtN']\") click()",
+        "time" : {
+          "start" : 1660139446296,
+          "stop" : 1660139446361,
+          "duration" : 65
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Список банкоматов не должнен быть пустым",
+      "time" : {
+        "start" : 1660139446361,
+        "stop" : 1660139446376,
+        "duration" : 15
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"By.xpath: //div[contains(@class, 'MainDataContainer')]\") should be(size > 0)",
+        "time" : {
+          "start" : 1660139446361,
+          "stop" : 1660139446376,
+          "duration" : 15
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 1,
+      "hasContent" : true
+    }, {
+      "name" : "Драйвер, давай до свидания",
+      "time" : {
+        "start" : 1660139446376,
+        "stop" : 1660139446431,
+        "duration" : 55
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"webdriver\") close()",
+        "time" : {
+          "start" : 1660139446376,
+          "stop" : 1660139446431,
+          "duration" : 55
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 1,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 28,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "tests.officesAndBanks"
+  }, {
+    "name" : "testClass",
+    "value" : "tests.officesAndBanks.ATMCheckoutTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "atbNotEmptyCheck"
+  }, {
+    "name" : "suite",
+    "value" : "tests.officesAndBanks.ATMCheckoutTest"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-KT0G865"
+  }, {
+    "name" : "thread",
+    "value" : "15512@DESKTOP-KT0G865.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "feature",
+    "value" : "Офисы и банкоматы"
+  }, {
+    "name" : "owner",
+    "value" : "автор - Александр Черняев"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "owner" : "автор - Александр Черняев",
+    "retries" : [ {
+      "uid" : "13e611c7821d01ee",
+      "status" : "passed",
+      "time" : {
+        "start" : 1660138536091,
+        "stop" : 1660138544242,
+        "duration" : 8151
+      }
+    }, {
+      "uid" : "22fc12e68b624e3e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1660074894295,
+        "stop" : 1660074924355,
+        "duration" : 30060
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "e42cef2efd104d64.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,279 @@
+{
+  "uid" : "fa69c6fe7bfde1f8",
+  "name" : "Проверка о совпадении кол-ва акции у чекбокса 'Акции' и кол-во карточек с предложениями",
+  "fullName" : "tests.offers.BanksOffersTest.banksOffersCountCheck",
+  "historyId" : "649fe024f24dc425ae15c22bf1ed6b34",
+  "time" : {
+    "start" : 1660138529195,
+    "stop" : 1660138536086,
+    "duration" : 6891
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Открываем https://www.mtsbank.ru",
+      "time" : {
+        "start" : 1660138529195,
+        "stop" : 1660138533756,
+        "duration" : 4561
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"open\") https://www.mtsbank.ru",
+        "time" : {
+          "start" : 1660138529195,
+          "stop" : 1660138533756,
+          "duration" : 4561
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "$(\"webdriver\") create()",
+          "time" : {
+            "start" : 1660138529195,
+            "stop" : 1660138531135,
+            "duration" : 1940
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0,
+          "stepsCount" : 0,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 1,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Переход на вкладку 'Акции и предложения'",
+      "time" : {
+        "start" : 1660138533756,
+        "stop" : 1660138533864,
+        "duration" : 108
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"By.xpath: //a[@href='/offers']\") should be(visible)",
+        "time" : {
+          "start" : 1660138533757,
+          "stop" : 1660138533784,
+          "duration" : 27
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "$(\"By.xpath: //a[@href='/offers']\") click()",
+        "time" : {
+          "start" : 1660138533784,
+          "stop" : 1660138533864,
+          "duration" : 80
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Выбираем фильтр 'Акции банка'",
+      "time" : {
+        "start" : 1660138533865,
+        "stop" : 1660138535754,
+        "duration" : 1889
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"By.xpath: //div[text()='Акции от банка']\") scroll to()",
+        "time" : {
+          "start" : 1660138533865,
+          "stop" : 1660138535643,
+          "duration" : 1778
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "$(\"By.xpath: //div[text()='Акции от банка']\") click()",
+        "time" : {
+          "start" : 1660138535643,
+          "stop" : 1660138535754,
+          "duration" : 111
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Сравниваем значения около чекбока 'Акции банка' и кол-во карточек с этими акциями",
+      "time" : {
+        "start" : 1660138535754,
+        "stop" : 1660138536032,
+        "duration" : 278
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"By.xpath: //input[@name='category[21]']/ancestor::label//span\") text()",
+        "time" : {
+          "start" : 1660138535754,
+          "stop" : 1660138535798,
+          "duration" : 44
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "$(\"[class*=Offers__Wrapper] a\") should have(size(7))",
+        "time" : {
+          "start" : 1660138535799,
+          "stop" : 1660138536032,
+          "duration" : 233
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Драйвер, давай до свидания",
+      "time" : {
+        "start" : 1660138536032,
+        "stop" : 1660138536086,
+        "duration" : 54
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"webdriver\") close()",
+        "time" : {
+          "start" : 1660138536032,
+          "stop" : 1660138536086,
+          "duration" : 54
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 1,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 14,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "tests.offers"
+  }, {
+    "name" : "testClass",
+    "value" : "tests.offers.BanksOffersTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "banksOffersCountCheck"
+  }, {
+    "name" : "suite",
+    "value" : "tests.offers.BanksOffersTest"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-KT0G865"
+  }, {
+    "name" : "thread",
+    "value" : "7592@DESKTOP-KT0G865.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "feature",
+    "value" : "Акции и предложения"
+  }, {
+    "name" : "owner",
+    "value" : "автор - Александр Черняев"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "fa69c6fe7bfde1f8.json",
+  "parameterValues" : [ ]
+}

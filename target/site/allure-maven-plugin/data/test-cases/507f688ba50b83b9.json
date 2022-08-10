@@ -1,0 +1,420 @@
+{
+  "uid" : "507f688ba50b83b9",
+  "name" : "Не вводим номер и просто жмем 'оформить карту'",
+  "fullName" : "tests.cards.VirtualCardOrderTest.emptyPhoneRequest",
+  "historyId" : "27905fb2c6f3e1cdaaf7c946cead2509",
+  "time" : {
+    "start" : 1660074840811,
+    "stop" : 1660074850183,
+    "duration" : 9372
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Открываем https://www.mtsbank.ru",
+      "time" : {
+        "start" : 1660074840826,
+        "stop" : 1660074845580,
+        "duration" : 4754
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"open\") https://www.mtsbank.ru",
+        "time" : {
+          "start" : 1660074840827,
+          "stop" : 1660074845580,
+          "duration" : 4753
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "$(\"webdriver\") create()",
+          "time" : {
+            "start" : 1660074840827,
+            "stop" : 1660074841687,
+            "duration" : 860
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0,
+          "stepsCount" : 0,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 1,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Переход на вкладку 'Карты'",
+      "time" : {
+        "start" : 1660074845580,
+        "stop" : 1660074845685,
+        "duration" : 105
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"By.xpath: //div[1]/a[@href='/chastnim-licam/karti/']\") should be(visible)",
+        "time" : {
+          "start" : 1660074845580,
+          "stop" : 1660074845603,
+          "duration" : 23
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "$(\"By.xpath: //div[1]/a[@href='/chastnim-licam/karti/']\") click()",
+        "time" : {
+          "start" : 1660074845603,
+          "stop" : 1660074845685,
+          "duration" : 82
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Выбираем виртуальную карту в меню",
+      "time" : {
+        "start" : 1660074845686,
+        "stop" : 1660074848313,
+        "duration" : 2627
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"By.xpath: //ul//a[contains(@href, 'virtual')]\") scroll into view(true)",
+        "time" : {
+          "start" : 1660074845686,
+          "stop" : 1660074845716,
+          "duration" : 30
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "$(\"By.xpath: //ul//a[contains(@href, 'virtual')]\") get wrapped element()",
+          "time" : {
+            "start" : 1660074845686,
+            "stop" : 1660074845706,
+            "duration" : 20
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0,
+          "stepsCount" : 0,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 1,
+        "hasContent" : true
+      }, {
+        "name" : "$(\"By.xpath: //ul//a[contains(@href, 'virtual')]\") click()",
+        "time" : {
+          "start" : 1660074845716,
+          "stop" : 1660074848313,
+          "duration" : 2597
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 3,
+      "hasContent" : true
+    }, {
+      "name" : "Оформляем первую карту в списке",
+      "time" : {
+        "start" : 1660074848313,
+        "stop" : 1660074848429,
+        "duration" : 116
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"By.xpath: //div[@data-testid='flexbox']/a[@data-testid='button'][1]\") should be(size > 0)",
+        "time" : {
+          "start" : 1660074848313,
+          "stop" : 1660074848324,
+          "duration" : 11
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "$(\"By.xpath: //div[@data-testid='flexbox']/a[@data-testid='button'][1][0]\") click()",
+        "time" : {
+          "start" : 1660074848325,
+          "stop" : 1660074848429,
+          "duration" : 104
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Пустое значение в поле 'телефон'",
+      "time" : {
+        "start" : 1660074848429,
+        "stop" : 1660074849839,
+        "duration" : 1410
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"By.xpath: //input[@name='phone']\") send keys()",
+        "time" : {
+          "start" : 1660074848429,
+          "stop" : 1660074849839,
+          "duration" : 1410
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 1,
+      "hasContent" : true
+    }, {
+      "name" : "Нажимаем для отправки кода подтверждения на номер",
+      "time" : {
+        "start" : 1660074849839,
+        "stop" : 1660074849976,
+        "duration" : 137
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"By.xpath: //form//button\") should be(enabled)",
+        "time" : {
+          "start" : 1660074849839,
+          "stop" : 1660074849857,
+          "duration" : 18
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "$(\"By.xpath: //form//button\") click()",
+        "time" : {
+          "start" : 1660074849857,
+          "stop" : 1660074849976,
+          "duration" : 119
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Неверный номер!",
+      "time" : {
+        "start" : 1660074849977,
+        "stop" : 1660074850025,
+        "duration" : 48
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"By.xpath: //form//div[@data-testid='text'][2]\") should be(exist)",
+        "time" : {
+          "start" : 1660074849977,
+          "stop" : 1660074850002,
+          "duration" : 25
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "$(\"By.xpath: //form//div[@data-testid='text'][2]\") should have(text \"Введите верный номер телефона\")",
+        "time" : {
+          "start" : 1660074850002,
+          "stop" : 1660074850025,
+          "duration" : 23
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "message",
+        "value" : "Введите верный номер телефона"
+      } ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Драйвер, давай до свидания",
+      "time" : {
+        "start" : 1660074850025,
+        "stop" : 1660074850183,
+        "duration" : 158
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"webdriver\") close()",
+        "time" : {
+          "start" : 1660074850025,
+          "stop" : 1660074850183,
+          "duration" : 158
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 1,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 23,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "tests.cards"
+  }, {
+    "name" : "testClass",
+    "value" : "tests.cards.VirtualCardOrderTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "emptyPhoneRequest"
+  }, {
+    "name" : "suite",
+    "value" : "tests.cards.VirtualCardOrderTest"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-KT0G865"
+  }, {
+    "name" : "thread",
+    "value" : "24364@DESKTOP-KT0G865.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "story",
+    "value" : "Виртуальная карта"
+  }, {
+    "name" : "feature",
+    "value" : "Карты"
+  }, {
+    "name" : "owner",
+    "value" : "автор - Александр Черняев"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "507f688ba50b83b9.json",
+  "parameterValues" : [ ]
+}

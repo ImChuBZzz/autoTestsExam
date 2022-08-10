@@ -1,0 +1,335 @@
+{
+  "uid" : "523e3a8ef090b1e2",
+  "name" : "вКонтакте",
+  "fullName" : "tests.smallBusiness.SmallBusinessSocialsTest.vkUrlTest",
+  "historyId" : "7ad670b590b78329a858d88e6482c025",
+  "time" : {
+    "start" : 1660139482904,
+    "stop" : 1660139491247,
+    "duration" : 8343
+  },
+  "status" : "passed",
+  "flaky" : true,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Открываем https://www.mtsbank.ru",
+      "time" : {
+        "start" : 1660139482904,
+        "stop" : 1660139486681,
+        "duration" : 3777
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"open\") https://www.mtsbank.ru",
+        "time" : {
+          "start" : 1660139482904,
+          "stop" : 1660139486681,
+          "duration" : 3777
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "$(\"webdriver\") create()",
+          "time" : {
+            "start" : 1660139482904,
+            "stop" : 1660139485090,
+            "duration" : 2186
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0,
+          "stepsCount" : 0,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 1,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Переход на вкладку 'Малый бизнес и ИП'",
+      "time" : {
+        "start" : 1660139486681,
+        "stop" : 1660139486817,
+        "duration" : 136
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"By.xpath: //a[@href='/malomu-biznesu/']\") should be(visible)",
+        "time" : {
+          "start" : 1660139486681,
+          "stop" : 1660139486710,
+          "duration" : 29
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "$(\"By.xpath: //a[@href='/malomu-biznesu/']\") click()",
+        "time" : {
+          "start" : 1660139486710,
+          "stop" : 1660139486817,
+          "duration" : 107
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Выбираем вКонтакте",
+      "time" : {
+        "start" : 1660139486817,
+        "stop" : 1660139488596,
+        "duration" : 1779
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"By.xpath: //a[@aria-label='Vk']\") should be(visible)",
+        "time" : {
+          "start" : 1660139486818,
+          "stop" : 1660139488477,
+          "duration" : 1659
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "$(\"By.xpath: //a[@aria-label='Vk']\") scroll to()",
+        "time" : {
+          "start" : 1660139488477,
+          "stop" : 1660139488501,
+          "duration" : 24
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "$(\"By.xpath: //a[@aria-label='Vk']\") click()",
+        "time" : {
+          "start" : 1660139488501,
+          "stop" : 1660139488596,
+          "duration" : 95
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 3,
+      "hasContent" : true
+    }, {
+      "name" : "Проверяем валидность ссылки на вконтакте",
+      "time" : {
+        "start" : 1660139488596,
+        "stop" : 1660139491192,
+        "duration" : 2596
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"window(index: 1)\") switch to()",
+        "time" : {
+          "start" : 1660139488596,
+          "stop" : 1660139488608,
+          "duration" : 12
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "$(\"webdriver\") should have url https://vk.com/mts_tb",
+        "time" : {
+          "start" : 1660139488609,
+          "stop" : 1660139491131,
+          "duration" : 2522
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "$(\"current window\") close()",
+        "time" : {
+          "start" : 1660139491131,
+          "stop" : 1660139491192,
+          "duration" : 61
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "https://vk.com/mts_tb"
+      } ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 3,
+      "hasContent" : true
+    }, {
+      "name" : "Драйвер, давай до свидания",
+      "time" : {
+        "start" : 1660139491192,
+        "stop" : 1660139491247,
+        "duration" : 55
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"webdriver\") close()",
+        "time" : {
+          "start" : 1660139491193,
+          "stop" : 1660139491247,
+          "duration" : 54
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 1,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 16,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "tests.smallBusiness"
+  }, {
+    "name" : "testClass",
+    "value" : "tests.smallBusiness.SmallBusinessSocialsTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "vkUrlTest"
+  }, {
+    "name" : "suite",
+    "value" : "tests.smallBusiness.SmallBusinessSocialsTest"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-KT0G865"
+  }, {
+    "name" : "thread",
+    "value" : "15512@DESKTOP-KT0G865.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "story",
+    "value" : "Проверка соцсетей"
+  }, {
+    "name" : "feature",
+    "value" : "Малый бизнес и ИП"
+  }, {
+    "name" : "owner",
+    "value" : "автор - Александр Черняев"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "owner" : "автор - Александр Черняев",
+    "retries" : [ {
+      "uid" : "975ef584c7a341a9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1660138580654,
+        "stop" : 1660138588192,
+        "duration" : 7538
+      }
+    }, {
+      "uid" : "dc08c51557d880b6",
+      "status" : "failed",
+      "statusDetails" : "webdriver should have url https://vk.com/mts_tb\r\nActual value: https://vk.com/mtsbankru\r\nScreenshot: file:/D:/My_docs/Workspace/JavaJob/exams/autoTestsExam/build/reports/tests/1660075083854.3.png\r\nPage source: file:/D:/My_docs/Workspace/JavaJob/exams/autoTestsExam/build/reports/tests/1660075083854.3.html\r\nTimeout: 30 s.",
+      "time" : {
+        "start" : 1660075042973,
+        "stop" : 1660075084519,
+        "duration" : 41546
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "523e3a8ef090b1e2.json",
+  "parameterValues" : [ ]
+}

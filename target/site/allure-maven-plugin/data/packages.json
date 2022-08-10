@@ -1,0 +1,253 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "tests",
+    "children" : [ {
+      "name" : "cards",
+      "children" : [ {
+        "name" : "incorrectPhoneRequest",
+        "uid" : "7dfaf3e984a41454",
+        "parentUid" : "b86c9c177a77c2dc54e41b2b3fd86650",
+        "status" : "passed",
+        "time" : {
+          "start" : 1660139385489,
+          "stop" : 1660139395089,
+          "duration" : 9600
+        },
+        "flaky" : true,
+        "parameters" : [ ]
+      }, {
+        "name" : "isSmsCodeReadyToInput",
+        "uid" : "986e8fda0342c7da",
+        "parentUid" : "b86c9c177a77c2dc54e41b2b3fd86650",
+        "status" : "passed",
+        "time" : {
+          "start" : 1660139395193,
+          "stop" : 1660139403559,
+          "duration" : 8366
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "emptyPhoneRequest",
+        "uid" : "128d7ab5e1a41f3e",
+        "parentUid" : "b86c9c177a77c2dc54e41b2b3fd86650",
+        "status" : "passed",
+        "time" : {
+          "start" : 1660139403564,
+          "stop" : 1660139411789,
+          "duration" : 8225
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "b86c9c177a77c2dc54e41b2b3fd86650"
+    }, {
+      "name" : "deposit",
+      "children" : [ {
+        "name" : "checkTermValue",
+        "uid" : "8605fb22dd69c33b",
+        "parentUid" : "a79978307882e5593c4f05c78b83c36b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1660139411799,
+          "stop" : 1660139417769,
+          "duration" : 5970
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "checkDepositValue",
+        "uid" : "f82c60afbdf54fc0",
+        "parentUid" : "a79978307882e5593c4f05c78b83c36b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1660139417772,
+          "stop" : 1660139423521,
+          "duration" : 5749
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "a79978307882e5593c4f05c78b83c36b"
+    }, {
+      "name" : "mortgage",
+      "children" : [ {
+        "name" : "shouldBeCorrectTimeline",
+        "uid" : "c201f036b793092b",
+        "parentUid" : "f3122432f63cc1baf068628076781af2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1660139423528,
+          "stop" : 1660139431696,
+          "duration" : 8168
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "f3122432f63cc1baf068628076781af2"
+    }, {
+      "name" : "offers",
+      "children" : [ {
+        "name" : "banksOffersCountCheck",
+        "uid" : "e1134ecb1eb5c87d",
+        "parentUid" : "687c04f5ec1834e30b34394a8ed3ac94",
+        "status" : "passed",
+        "time" : {
+          "start" : 1660139431702,
+          "stop" : 1660139437523,
+          "duration" : 5821
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "687c04f5ec1834e30b34394a8ed3ac94"
+    }, {
+      "name" : "officesAndBanks",
+      "children" : [ {
+        "name" : "atbNotEmptyCheck",
+        "uid" : "e42cef2efd104d64",
+        "parentUid" : "4bee0f3203c006ba41e95842777881db",
+        "status" : "passed",
+        "time" : {
+          "start" : 1660139437528,
+          "stop" : 1660139446431,
+          "duration" : 8903
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "4bee0f3203c006ba41e95842777881db"
+    }, {
+      "name" : "onlineBank",
+      "children" : [ {
+        "name" : "emptyPhoneNumberInput",
+        "uid" : "86b72b5ce59d6326",
+        "parentUid" : "2a93667501ca54385c64668c61e4e1ae",
+        "status" : "passed",
+        "time" : {
+          "start" : 1660139446437,
+          "stop" : 1660139451310,
+          "duration" : 4873
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "incorrectPhoneNumberInput",
+        "uid" : "9c72e90cf6b838c9",
+        "parentUid" : "2a93667501ca54385c64668c61e4e1ae",
+        "status" : "passed",
+        "time" : {
+          "start" : 1660139451313,
+          "stop" : 1660139456908,
+          "duration" : 5595
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "correctPhoneNumberInput",
+        "uid" : "49ce29ed76fb828a",
+        "parentUid" : "2a93667501ca54385c64668c61e4e1ae",
+        "status" : "passed",
+        "time" : {
+          "start" : 1660139456911,
+          "stop" : 1660139463044,
+          "duration" : 6133
+        },
+        "flaky" : true,
+        "parameters" : [ ]
+      }, {
+        "name" : "expectedTermsPDF",
+        "uid" : "448d3dd5930b8990",
+        "parentUid" : "2a93667501ca54385c64668c61e4e1ae",
+        "status" : "passed",
+        "time" : {
+          "start" : 1660139463049,
+          "stop" : 1660139468913,
+          "duration" : 5864
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "expectedPolicyPDF",
+        "uid" : "e385a09bb2424712",
+        "parentUid" : "2a93667501ca54385c64668c61e4e1ae",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1660139468918,
+          "stop" : 1660139468918,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "2a93667501ca54385c64668c61e4e1ae"
+    }, {
+      "name" : "smallBusiness",
+      "children" : [ {
+        "name" : "currencyTransferAccessTest",
+        "uid" : "bfd7cf686d66b92c",
+        "parentUid" : "3ddfa0c80113f132ee14d5b32e478560",
+        "status" : "passed",
+        "time" : {
+          "start" : 1660139468924,
+          "stop" : 1660139476471,
+          "duration" : 7547
+        },
+        "flaky" : true,
+        "parameters" : [ ]
+      }, {
+        "name" : "tariffPDFAccessTest",
+        "uid" : "551db932e4f7f3f6",
+        "parentUid" : "3ddfa0c80113f132ee14d5b32e478560",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1660139476475,
+          "stop" : 1660139476475,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "okUrlTest",
+        "uid" : "923fd855c43bb85f",
+        "parentUid" : "3ddfa0c80113f132ee14d5b32e478560",
+        "status" : "passed",
+        "time" : {
+          "start" : 1660139476481,
+          "stop" : 1660139482898,
+          "duration" : 6417
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "vkUrlTest",
+        "uid" : "523e3a8ef090b1e2",
+        "parentUid" : "3ddfa0c80113f132ee14d5b32e478560",
+        "status" : "passed",
+        "time" : {
+          "start" : 1660139482904,
+          "stop" : 1660139491247,
+          "duration" : 8343
+        },
+        "flaky" : true,
+        "parameters" : [ ]
+      }, {
+        "name" : "tgUrlTest",
+        "uid" : "c1c01889cbc44a15",
+        "parentUid" : "3ddfa0c80113f132ee14d5b32e478560",
+        "status" : "passed",
+        "time" : {
+          "start" : 1660139491250,
+          "stop" : 1660139497277,
+          "duration" : 6027
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "3ddfa0c80113f132ee14d5b32e478560"
+    } ],
+    "uid" : "bf49149a3821e34f7608bb6885d52868"
+  } ]
+}
