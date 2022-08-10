@@ -1,4 +1,4 @@
-<h1 align="center"><a href="https://imchubzzz.github.io/autoTestsExam/28/" style="color: darkgrey ">Итоговая работа по курсу "Автоматизация тестирования"</a></h1>
+<h1 align="center"><a href="https://imchubzzz.github.io/autoTestsExam" style="color: darkgrey ">Итоговая работа по курсу "Автоматизация тестирования"</a></h1>
 
 <h2>Задание:</h2>
 <ul type="square">
