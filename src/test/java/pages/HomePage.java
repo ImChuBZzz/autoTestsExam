@@ -8,7 +8,7 @@ import pages.cards.CardsPage;
 import pages.deposit.DepositPage;
 import pages.mortgage.MortgageItPage;
 import pages.offers.OffersPage;
-import pages.officesAndBanks.OfficesAndBanksPage;
+import pages.officesAndAtms.OfficesAndAtmsPage;
 import pages.onlineBank.OnlineBankPage;
 import pages.smallBuiness.SmallBusinessPage;
 
@@ -32,9 +32,9 @@ public class HomePage {
     }
 
     @Step("Переход на вкладку 'Офисы и банкоматы'")
-    public OfficesAndBanksPage gotoOfficesAndBanks() {
+    public OfficesAndAtmsPage gotoOfficesAndBanks() {
         officesAndBanks.shouldBe(Condition.visible).click();
-        return new OfficesAndBanksPage();
+        return new OfficesAndAtmsPage();
     }
 
     @Step("Переход на вкладку 'Акции и предложения'")

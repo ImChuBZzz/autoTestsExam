@@ -1,4 +1,4 @@
-package tests.officesAndBanks;
+package tests.officesAndAtms;
 
 
 import helpers.RetryRule;
@@ -7,7 +7,7 @@ import io.qameta.allure.Owner;
 import io.qameta.allure.junit4.DisplayName;
 import org.junit.Rule;
 import org.junit.Test;
-import pages.officesAndBanks.OfficesAndBanksPage;
+import pages.officesAndAtms.OfficesAndAtmsPage;
 import pages.HomePage;
 import tests.BaseTest;
 
@@ -20,7 +20,7 @@ public class ATMCheckoutTest extends BaseTest {
     @Test
     @DisplayName("Проверяем наличие доступных банкоматов")
     public void atbNotEmptyCheck() {
-        OfficesAndBanksPage officesAndBanksPage = new HomePage()
+        OfficesAndAtmsPage officesAndAtmsPage = new HomePage()
                 .openHomePage()
                 .gotoOfficesAndBanks()
                 .loading()
@@ -30,6 +30,6 @@ public class ATMCheckoutTest extends BaseTest {
                 .shops()
                 .terminals()
                 .filtersClick();
-        officesAndBanksPage.ATMListSize();
+        officesAndAtmsPage.ATMListSize();
     }
 }

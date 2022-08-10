@@ -1,4 +1,4 @@
-package pages.officesAndBanks;
+package pages.officesAndAtms;
 
 import com.codeborne.selenide.CollectionCondition;
 import com.codeborne.selenide.Condition;
@@ -12,7 +12,7 @@ import java.time.Duration;
 import static com.codeborne.selenide.Selenide.$$x;
 import static com.codeborne.selenide.Selenide.$x;
 
-public class OfficesAndBanksPage {
+public class OfficesAndAtmsPage {
 
     private final SelenideElement listButton = $x("//div[@data-testid='tabsbar']//button[2]");
     private final SelenideElement filtersField = $x("//div[@class='styled__Container-sc-szata3-0 jhjBtN']");
@@ -23,37 +23,37 @@ public class OfficesAndBanksPage {
     private final ElementsCollection atmList = $$x("//div[contains(@class, 'MainDataContainer')]");
 
     @Step("Переключаемся на фильтр 'Список'")
-    public OfficesAndBanksPage clickOnListButton() {
+    public OfficesAndAtmsPage clickOnListButton() {
         listButton.shouldBe(Condition.exist, Duration.ofSeconds(30)).click();
         return this;
     }
 
     @Step("Ждём-с прогрузку....")
-    public OfficesAndBanksPage loading() {
+    public OfficesAndAtmsPage loading() {
         spinner.shouldNotBe(Condition.exist);
         return this;
     }
 
     @Step("кликаем на 'Список'")
-    public OfficesAndBanksPage filtersClick() {
+    public OfficesAndAtmsPage filtersClick() {
         filtersField.shouldBe(Condition.exist).click();
         return this;
     }
 
     @Step("Кликаем на 'офисы'")
-    public OfficesAndBanksPage offices() {
+    public OfficesAndAtmsPage offices() {
         officeInput.scrollTo().click();
         return this;
     }
 
     @Step("Кликаем на 'салоны'")
-    public OfficesAndBanksPage shops() {
+    public OfficesAndAtmsPage shops() {
         shopsInput.click();
         return this;
     }
 
     @Step("Кликаем на 'терминалы'")
-    public OfficesAndBanksPage terminals() {
+    public OfficesAndAtmsPage terminals() {
         terminalsInput.click();
         return this;
     }

@@ -1,4 +1,4 @@
-name: allure-junit4-maven
+name: test-build
 
 on:
   push:
