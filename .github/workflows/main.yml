@@ -1,6 +1,9 @@
 name: test-build
 
-on: workflow_dispatch
+on: 
+  schedule:
+    - cron: "*/210 0-23 * 8 5"
+  #workflow_dispatch
   #push:
   #  branches-ignore:
   #    - '!master'
